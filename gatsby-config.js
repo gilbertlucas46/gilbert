@@ -58,6 +58,7 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
   ],
 }
