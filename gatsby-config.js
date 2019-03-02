@@ -3,8 +3,10 @@ module.exports = {
     title: `Gilbert Lucas`,
     description: `My name is Gilbert Lucas. I'm a 28-year-old web developer from Philippines with an interest in pretty much everything web! I mainly write JavaScript at present, I also do web design, but I'm up for learning pretty much anything!`,
     author: `Gilbert Lucas`,
+    siteUrl: 'https://serene-banach-5d6bc4.netlify.com',
   },
   plugins: [ 
+    'gatsby-plugin-sitemap',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
