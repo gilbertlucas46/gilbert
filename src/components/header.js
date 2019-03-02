@@ -15,7 +15,7 @@ const HeaderWrapper = styled.div`
 const HeaderContent = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 1.45rem;
+  padding: 0.3rem;
 `;
 
 const Header = ({ siteTitle }) => (
