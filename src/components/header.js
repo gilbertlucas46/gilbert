@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import logo from "../images/gilbert-logo.svg"
 
 const HeaderWrapper = styled.div`
-  background: #524763;
+  background: red;
   img {
     margin-bottom:0;
   }
