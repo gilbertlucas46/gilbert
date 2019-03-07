@@ -16,17 +16,17 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }    
-    `).then(results => {
-      results.data.allMarkdownRemark.edges.forEach(({node}) => {
-        createPage({
-          path: `/posts${node.frontmatter.slug}`,
-          component: blogPostTemplate,
-          context: {
-            slug: node.frontmatter.slug,
-          }
-        });
+      `).then(results => {
+        results.data.allMarkdownRemark.edges.forEach(({node}) => {
+          createPage({
+            path: `/posts${node.frontmatter.slug}`,
+            component: blogPostTemplate,
+            context: {
+              slug: node.frontmatter.slug,
+            }
+          });
+        })
+        resolve();
       })
-      resolve();
-    })
-  });
-}
+    });
+  }
