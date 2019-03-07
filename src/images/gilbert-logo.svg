@@ -1,40 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 515 515" style="enable-background:new 0 0 515 515;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:none;}
-	.st2{fill:#FFFFFF;}
-</style>
-<g>
-	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="385.5214" y1="479.2395" x2="129.4786" y2="35.7605">
-		<stop  offset="0" style="stop-color:#9B6A59"/>
-		<stop  offset="1" style="stop-color:#D29579"/>
-	</linearGradient>
-	<circle class="st0" cx="257.5" cy="257.5" r="256"/>
-	<g>
-		<circle class="st1" cx="257.5" cy="257.5" r="194.17"/>
-		<g>
-			<path class="st2" d="M317.76,168.85L216.7,67.79c-6.48,1.36-14.6,3.27-22.25,6.21l108.46,108.12L317.76,168.85z"/>
-			<path class="st2" d="M252.54,163.77L172,83.23c-7.15,3.26-12.95,6.48-18.06,10.04l74.9,74.55
-				C236.44,165.36,244.23,164.03,252.54,163.77z"/>
-			<path class="st2" d="M207.18,178.19l-71.68-71.67c-4.48,3.44-9.11,7.59-14.82,13.27l70.84,70.49
-				C196.1,186.02,201.36,181.41,207.18,178.19z"/>
-			<polygon class="st2" points="265.04,264.19 395.04,394.16 408.92,379.94 293.18,264.19 			"/>
-			<polygon class="st2" points="324.88,264.19 409.08,348.07 409.08,320.32 352.96,264.19 			"/>
-			<polygon class="st2" points="409.08,288.27 409.08,264.19 385,264.19 			"/>
-			<path class="st2" d="M348.74,140.39l-75.61-75.95c-5.08-0.34-10.32-0.68-15.81-0.68c-4.16,0-8.44,0-12.57,0.4l89.47,89.47
-				L348.74,140.39z"/>
-			<path class="st2" d="M382.46,109.84c-21.75-18.81-45.67-31.78-71.18-38.59l53.93,53.93L382.46,109.84z"/>
-			<path class="st2" d="M134.81,380.39c-61.66-61.66-67.84-159.55-14.42-228.47l-14.87-14.87
-				c-60.99,77.15-54.55,187.74,14.99,257.28s180.14,75.99,257.28,14.99l-14.51-14.51C294.36,448.23,196.46,442.05,134.81,380.39z"/>
-			<path class="st2" d="M162.63,352.88c-46.38-46.38-52.33-119.52-14.06-172.78l-13.51-13.51
-				c-45.36,60.75-39.24,145.58,14.37,199.18c53.61,53.61,138.44,59.73,199.18,14.37l-13.19-13.19
-				C282.15,405.21,209,399.26,162.63,352.88z"/>
-			<path class="st2" d="M190.06,324.44c-30.99-30.98-36.64-79.19-13.66-116.51l-13.48-13.48c-30.42,45.21-24.56,105.63,13.97,144.17
-				c38.53,38.53,98.96,44.38,144.17,13.97l-14.48-14.48C269.26,361.08,221.05,355.42,190.06,324.44z"/>
-		</g>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="43.821" height="83.268" viewBox="0 0 43.821 83.268">
+  <g id="Group_3" data-name="Group 3" transform="translate(-16 -11)">
+    <text id="gilbert" transform="translate(16 90.268)" fill="#fff" font-size="10" font-family="LessRegular, Less"><tspan x="0" y="0">gilbert</tspan></text>
+    <g id="Group_2" data-name="Group 2" transform="translate(-58.095 -20.284)">
+      <path id="Path_24" data-name="Path 24" d="M91.338,77.42A15.812,15.812,0,1,1,75.526,93.232,15.812,15.812,0,0,1,91.338,77.42Zm0,9.864a5.948,5.948,0,1,0,5.948,5.948A5.948,5.948,0,0,0,91.338,87.284Z" transform="translate(-1.008 -32.488)" fill="#ed2654" fill-rule="evenodd"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="6.963" cy="6.963" r="6.963" transform="translate(98.221 41.131) rotate(-45)" fill="#ed2654"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="31.324" height="12.572" rx="6.286" transform="translate(74.095 84.152) rotate(-13.46)" fill="#ed2654"/>
+    </g>
+  </g>
 </svg>
