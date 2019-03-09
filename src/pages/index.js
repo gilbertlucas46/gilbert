@@ -1,11 +1,11 @@
-import React from "react"
-import Layout from "../components/layout"
-import Listing from "../components/listing"
+import React from 'react'
+
+import Layout from '../components/layout'
 
 
 const IndexPage = ({location}) => (
   <Layout location={location}>
-    <Listing/>
+    
   </Layout>
 )
 

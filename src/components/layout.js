@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Archive from "./archive"
 
 import "./layout.css"
 
@@ -16,6 +15,7 @@ const MainLayout = styled.main`
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 40px;
+  padding-left:70px;
 `;
 
 const FooterLayout = styled.footer`
@@ -31,6 +31,14 @@ const Layout = ({ children,location }) => (
           siteMetadata {
             title
             description
+            menuLinks{
+              name
+              link
+            }
+            socialChannels{
+              name
+              link
+            }
           }
         }
         file(relativePath: {
@@ -46,10 +54,10 @@ const Layout = ({ children,location }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks}  socialChannels={data.site.siteMetadata.socialChannels} />
         <Spring
-          from={{ height: location.pathname === '/' ? 100 : 200 }}
-          to={{ height: location.pathname === '/' ? 200 : 100 }}
+          from={{ height: location.pathname === '/blog' ? 100 : 200 }}
+          to={{ height: location.pathname === '/blog' ? 200 : 100 }}
         >
           {styles => (
             <div style={{ overflow: 'hidden', ...styles }}>
@@ -66,13 +74,8 @@ const Layout = ({ children,location }) => (
           <div>
           {children}
           </div>
-          <Archive/>
         </MainLayout>
-      <FooterLayout>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </FooterLayout>
+     
         
       </>
     )}

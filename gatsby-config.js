@@ -4,6 +4,46 @@ module.exports = {
     description: `My name is Gilbert Lucas. I'm a 28-year-old web developer from Philippines with an interest in pretty much everything web! I mainly write JavaScript at present, I also do web design, but I'm up for learning pretty much anything!`,
     author: `Gilbert Lucas`,
     siteUrl: 'https://serene-banach-5d6bc4.netlify.com',
+    menuLinks:[
+        {
+          name:'home',
+          link:'/'
+        },
+        {
+          name:'profile',
+          link:'/profile'
+        },
+        {
+          name:'services',
+          link:'/services'
+        },
+        {
+          name:'portfolio',
+          link:'/portfolio'
+        },
+        {
+          name:'contact',
+          link:'/contact'
+        },
+        {
+          name:'blog',
+          link:'/blog'
+        }
+      ],
+      socialChannels: [
+        {
+          name:"linkedin",
+          link: "https://www.linkedin.com/in/gilbertlucas"
+        },
+        {
+          name:"stack",
+          link: "https://stackoverflow.com/users/2895356/bert-lucas"
+        },
+        {
+          name:"github",
+          link: "https://github.com/gilbertlucas46"
+        }
+      ]
   },
   plugins: [ 
     'gatsby-plugin-sitemap',

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "gilbert";
+  src:url("../fonts/gilbert.eot");
+  src:url("../fonts/gilbert.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilbert.woff") format("woff"),
+    url("../fonts/gilbert.ttf") format("truetype"),
+    url("../fonts/gilbert.svg#gilbert") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+[data-icon]:before {
+  font-family: "gilbert" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="dev-"]:before,
+[class*=" dev-"]:before {
+  font-family: "gilbert" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dev-gilbert-logo:before {
+  content: "\61";
+}
+.dev-arrow:before {
+  content: "\62";
+}
+.dev-blog:before {
+  content: "\63";
+}
+.dev-contact:before {
+  content: "\64";
+}
+.dev-home:before {
+  content: "\65";
+}
+.dev-portfolio:before {
+  content: "\66";
+}
+.dev-services:before {
+  content: "\67";
+}
+.dev-profile:before {
+  content: "\68";
+}
+.dev-github:before {
+  content: "\69";
+}
+.dev-linkedin:before {
+  content: "\6a";
+}
+.dev-stack:before {
+  content: "\6b";
+}
