@@ -8,14 +8,12 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
 import "./layout.css"
+import "./less-font.css"
 
 const MainLayout = styled.main`
   max-width:90%;
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   grid-gap: 40px;
-  padding-left:70px;
+  padding-left:90px;
 `;
 
 const FooterLayout = styled.footer`
@@ -55,19 +53,19 @@ const Layout = ({ children,location }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks}  socialChannels={data.site.siteMetadata.socialChannels} />
-        <Spring
+        
+        {location.pathname === '/blog' &&
+          <Spring
           from={{ height: location.pathname === '/blog' ? 100 : 200 }}
           to={{ height: location.pathname === '/blog' ? 200 : 100 }}
-        >
-          {styles => (
-            <div style={{ overflow: 'hidden', ...styles }}>
-              <Img fluid={data.file.childImageSharp.fluid} />
-            </div>
-          )}
-        </Spring>
-        {/*location.pathname === '/' &&
-        
-        */}
+          >
+            {styles => (
+              <div style={{ overflow: 'hidden', ...styles }}>
+                <Img fluid={data.file.childImageSharp.fluid} />
+              </div>
+            )}
+          </Spring>
+        }
         
         
         <MainLayout>
