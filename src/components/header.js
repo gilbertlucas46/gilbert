@@ -41,6 +41,9 @@ const HeaderContent = styled.div`
   }
   nav {
     height:288px;
+    @media (min-height:  568px) and (max-height: 700px) {
+      height: 200px;
+    }
     li {
       display: flex;
       align-items: center;
@@ -57,6 +60,9 @@ const HeaderContent = styled.div`
           font-size: 1.6rem;
           width: 32px;
           height: 32px;
+          @media (min-height:  568px) and (max-height: 700px) {
+            height: 18px;
+          }
           position: relative;
           display:block;
           margin: 8px auto;
@@ -96,6 +102,9 @@ const HeaderContent = styled.div`
           position: relative;
           display:block;
           margin: 8px auto;
+          @media (min-height:  568px) and (max-height: 700px) {
+            height: 10px;
+          }
           &:before {
             position:absolute;
             top:0;

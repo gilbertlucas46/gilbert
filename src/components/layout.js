@@ -11,9 +11,19 @@ import "./layout.css"
 import "./less-font.css"
 
 const MainLayout = styled.main`
-  max-width:90%;
+  max-width:100%;
   grid-gap: 40px;
-  padding-left:90px;
+  display: flex; /* establish flex container */
+    flex-direction: column; /* make main-axis vertical */
+    justify-content: center; /* align items vertically, in this case */
+    align-items: left; 
+    height:100vh;
+  @media (min-width: 1440px) {
+    padding-left:8%;
+  }
+  @media (max-width: 1399px) {
+    padding-left:90px;
+  }
 `;
 
 const FooterLayout = styled.footer`

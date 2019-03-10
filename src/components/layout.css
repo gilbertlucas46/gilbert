@@ -195,6 +195,13 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+/* ----------- Non-Retina Screens ----------- */
+@media (min-height:  568px) and (max-height: 700px){
+  html {
+    font: 70%/1.45em georgia, serif;
+  }
+}
+
 * {
   box-sizing: inherit;
 }
