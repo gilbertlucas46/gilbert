@@ -1,11 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { StaticQuery, graphql,Link } from "gatsby"
 import Layout from '../components/layout'
-import { StaticQuery, graphql } from "gatsby"
 import Scrable from '../components/scrable'
+import Button from '../components/button'
+
+import logoFaded from '../images/logo-faded.png'
 
 const HomeWrapper = styled.div`
+.logoFaded{
+  position: fixed;
+  height:518px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  right:25%;
+}
   .fixedBG {
     z-index: -1;
     left: 70px;
@@ -21,10 +32,13 @@ const HomeWrapper = styled.div`
   font-weight:normal;
   letter-spacing: 2px;
   font-size: 3.5rem;
+  color: #ffff;
   }
   h2 {
-    font-size:1.4rem;
+    font-size:1.5rem;
     letter-spacing: 2px;
+    font-weight:normal;
+    margin: 2rem 0;
   }
 `;
 
@@ -39,7 +53,7 @@ const IndexPage = ({location}) => (
         }) {
           childImageSharp {
             fluid(maxWidth:3000){
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -54,7 +68,12 @@ const IndexPage = ({location}) => (
           <div className="caption">
             <h1>Hey! I'm <strong>Gilbert</strong></h1>
             <h2>I'm a <Scrable/></h2>
+            <Button> <Link to={`/contact`}>Contact me</Link></Button>
           </div>
+          <img className="logoFaded"
+            src={logoFaded}
+            alt="Level Up Tutorials Logo"
+          />
         </HomeWrapper>
       </>
     )}

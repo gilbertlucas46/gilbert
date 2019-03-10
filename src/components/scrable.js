@@ -7,9 +7,8 @@ export default class Scrable extends Component {
     const characters = "!<>-{}/[]?=";
     return (
         <Cycler
-        renderIn={200}
+        renderIn={1000}
         duration={ 4000 }
-        typewriter={false}
         characters={ characters }
         strings={ strings } />
     )

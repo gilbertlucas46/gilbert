@@ -1,10 +1,9 @@
 import React from "react"
+import { Spring } from 'react-spring/renderprops'
 import PropTypes from "prop-types"
 import Img from 'gatsby-image'
-import { Spring } from 'react-spring/renderprops'
-import styled from 'styled-components'
 import { StaticQuery, graphql } from "gatsby"
-
+import styled from 'styled-components'
 import Header from "./header"
 
 import "./layout.css"
@@ -26,10 +25,7 @@ const MainLayout = styled.main`
   }
 `;
 
-const FooterLayout = styled.footer`
-  max-width:90%;
-  margin: 0 auto;
-`;
+
 
 const Layout = ({ children,location }) => (
   <StaticQuery
@@ -63,28 +59,20 @@ const Layout = ({ children,location }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks}  socialChannels={data.site.siteMetadata.socialChannels} />
-        
-        {location.pathname === '/blog' &&
-          <Spring
-          from={{ height: location.pathname === '/blog' ? 100 : 200 }}
-          to={{ height: location.pathname === '/blog' ? 200 : 100 }}
-          >
-            {styles => (
-              <div style={{ overflow: 'hidden', ...styles }}>
-                <Img fluid={data.file.childImageSharp.fluid} />
-              </div>
-            )}
-          </Spring>
-        }
-        
-        
+
         <MainLayout>
-          <div>
-          {children}
-          </div>
+          <Spring
+          delay={300}
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}
+          >
+          {({opacity}) =>(
+            <div style={{opacity}}>
+              {children}
+            </div>
+          )}
+          </Spring>
         </MainLayout>
-     
-        
       </>
     )}
   />
