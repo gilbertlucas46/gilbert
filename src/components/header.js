@@ -14,6 +14,14 @@ const HeaderWrapper = styled.div`
   overflow:hidden;
 `;
 const HeaderContent = styled.div`
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
    background-color:#181818;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main-axis vertical */
@@ -48,6 +56,26 @@ const HeaderContent = styled.div`
       display: flex;
       align-items: center;
       margin-bottom:0;
+      span {
+        display:none;
+      }
+      &:hover {
+        .dev {
+          display:none;
+          cursor:pointer;
+          
+        }
+        span {
+          display: block;
+          height: 48px;
+          width: 100%;
+          font-size: 0.6rem;
+          line-height: 46px;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+          cursor:pointer;
+        }
+      }
       a.active {
         color: #ED2654;
       }
@@ -60,6 +88,9 @@ const HeaderContent = styled.div`
           font-size: 1.6rem;
           width: 32px;
           height: 32px;
+          display:block;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
           @media (min-height:  568px) and (max-height: 700px) {
             height: 18px;
           }
@@ -139,7 +170,7 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
           <li key={link.name} style={{ 'listStyleType': 'none' }}>
           <Link to={link.link} activeClassName="active">
             <i className={`dev dev-${link.name}`}></i>
-            
+            <span>{link.name}</span>
           </Link>
           </li>)
         }
@@ -149,7 +180,9 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
           {
             socialChannels.map(link =>
             <li key={link.name} style={{ 'listStyleType': 'none' }}>
-              <a href={link.link} target="_blank"><i className={`dev dev-${link.name}`}></i></a>
+              <a href={link.link} target="_blank">
+                <i className={`dev dev-${link.name}`}></i>
+              </a>
             </li>)
           }
         </ul>

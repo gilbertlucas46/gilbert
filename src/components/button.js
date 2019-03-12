@@ -12,9 +12,30 @@ const ButtonContainer = styled.div`
     font-size: 1.2rem;
     color: #ED2654;
     letter-spacing: 2px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
     &:hover {
-        background-color:#ffff;
-        border: 2px solid #ffff;
+    background-color: #ED2654;
+    border: 2px solid #ED2654;
+   
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+        a {
+            color: #ffff;
+        }
     }
     a {
         color: #ED2654;
