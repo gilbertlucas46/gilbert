@@ -78,6 +78,16 @@ const HeaderContent = styled.div`
       }
       a.active {
         color: #ED2654;
+        -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        &:hover {
+          span {
+            display:none;
+          }
+          .dev {
+            display:block;
+          }
+        }
       }
       a {
         width: 100%;
@@ -89,8 +99,7 @@ const HeaderContent = styled.div`
           width: 32px;
           height: 32px;
           display:block;
-          -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+          
           @media (min-height:  568px) and (max-height: 700px) {
             height: 18px;
           }

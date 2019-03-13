@@ -17,6 +17,11 @@ const MainLayout = styled.main`
     justify-content: center; /* align items vertically, in this case */
     align-items: left; 
     height:100vh;
+    .contents {
+      max-height:90vh;
+      overflow:auto;
+      padding: 30px 0;
+    }
   @media (min-width: 1440px) {
     padding-left:8%;
   }
@@ -59,6 +64,8 @@ const Layout = ({ children,location }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks}  socialChannels={data.site.siteMetadata.socialChannels} />
+        
+
 
         <MainLayout>
           <Spring
@@ -67,7 +74,7 @@ const Layout = ({ children,location }) => (
           to={{ opacity: 1 }}
           >
           {({opacity}) =>(
-            <div style={{opacity}}>
+            <div style={{opacity}} className="contents">
               {children}
             </div>
           )}
