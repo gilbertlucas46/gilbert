@@ -6,17 +6,14 @@ import Layout from '../components/layout'
 import Scrable from '../components/scrable'
 import Button from '../components/button'
 
-import logoFaded from '../images/logo-faded.png'
+import Logo from '../components/logo'
 
 const HomeWrapper = styled.div`
-.logoFaded{
-  position: fixed;
-  height:518px;
-  top:0;
-  bottom:0;
-  margin:auto;
-  right:25%;
-}
+  height: 95vh;
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main-axis vertical */
+  justify-content: center; /* align items vertically, in this case */
+  align-items: left; 
   .fixedBG {
     z-index: -1;
     left: 70px;
@@ -29,17 +26,9 @@ const HomeWrapper = styled.div`
     }
   }
   h1 {
-  font-weight:normal;
-  letter-spacing: 2px;
-  font-size: 3.5rem;
   color: #ffff;
   }
-  h2 {
-    font-size:1.5rem;
-    letter-spacing: 2px;
-    font-weight:normal;
-    margin: 2rem 0;
-  }
+  
 `;
 
 
@@ -70,10 +59,7 @@ const IndexPage = ({location}) => (
             <h2>I'm a <Scrable/></h2>
             <Button> <Link to={`/contact`}>Contact me</Link></Button>
           </div>
-          <img className="logoFaded"
-            src={logoFaded}
-            alt="Level Up Tutorials Logo"
-          />
+          <Logo/>
         </HomeWrapper>
       </>
     )}

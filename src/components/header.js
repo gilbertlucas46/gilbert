@@ -14,15 +14,15 @@ const HeaderWrapper = styled.div`
   overflow:hidden;
 `;
 const HeaderContent = styled.div`
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
+    @-webkit-keyframes fadeIn {
+      from { opacity: 0; }
       to { opacity: 1; }
-}  
-@keyframes fadeIn {
-    from { opacity: 0; }
+    }  
+    @keyframes fadeIn {
+      from { opacity: 0; }
       to { opacity: 1; }
-}
-   background-color:#181818;
+    }
+    background-color:#181818;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main-axis vertical */
     justify-content: center; /* align items vertically, in this case */

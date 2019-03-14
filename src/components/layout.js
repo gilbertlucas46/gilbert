@@ -11,23 +11,42 @@ import "./less-font.css"
 
 const MainLayout = styled.main`
   max-width:100%;
-  grid-gap: 40px;
-  display: flex; /* establish flex container */
-    flex-direction: column; /* make main-axis vertical */
-    justify-content: center; /* align items vertically, in this case */
-    align-items: left; 
-    height:100vh;
-    .contents {
-      max-height:90vh;
-      overflow:auto;
-      padding: 30px 0;
+  padding-top:2rem;
+  height:100vh;
+  h1 {
+    color:#ED2654;
+    font-weight:normal;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    @media (max-width: 767px) {
+      font-size: 2.5rem;
+      line-height:3.8rem;
     }
-  @media (min-width: 1440px) {
+  }
+  h2 {
+    font-size:1.5rem;
+    letter-spacing: 2px;
+    font-weight:normal;
+    margin: 2rem 0;
+    @media (max-width: 767px) {
+      font-size:1.2rem;
+      line-height:1.8rem;
+      margin: 1rem 0;
+    }
+  }
+  .contents{
+    @media (min-width: 1440px) {
     padding-left:8%;
+    }
+    @media (max-width: 1399px) {
+      padding-left:100px;
+      padding-right:20px;
+    }
   }
-  @media (max-width: 1399px) {
-    padding-left:90px;
+  .portfolio {
+    padding-left:70px;
   }
+  
 `;
 
 
@@ -64,9 +83,6 @@ const Layout = ({ children,location }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks}  socialChannels={data.site.siteMetadata.socialChannels} />
-        
-
-
         <MainLayout>
           <Spring
           delay={300}
@@ -74,7 +90,8 @@ const Layout = ({ children,location }) => (
           to={{ opacity: 1 }}
           >
           {({opacity}) =>(
-            <div style={{opacity}} className="contents">
+            <div style={{opacity}}
+            className={location.pathname === '/portfolio' ? 'portfolio' : 'contents' }>
               {children}
             </div>
           )}

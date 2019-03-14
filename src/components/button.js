@@ -20,6 +20,8 @@ const ButtonContainer = styled.div`
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: scale(1);
+    text-align:center;
+    max-width:13rem;
     &:hover {
     background-color: #ED2654;
     border: 2px solid #ED2654;
@@ -32,6 +34,9 @@ const ButtonContainer = styled.div`
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
     transform: scale(1.1);
+    color:#fff;
+    text-align:center;
+    max-width:14rem;
     cursor: pointer;
         a {
             color: #ffff;
