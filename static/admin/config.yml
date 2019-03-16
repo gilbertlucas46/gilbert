@@ -35,7 +35,7 @@ collections:
       - { label: "Image", name: "thumbnail", widget: "image"}
       - { label: 'Categories', name: 'categories', widget: 'string', required: true }
       - { label: 'Project Nature', name: 'nature', widget: 'string' }
-      - { label: 'info', name: 'info', widget: 'markdown' }
+      - { label: 'info', name: 'body', widget: 'markdown' }
       - { label: "Type", name: "type", widget: "hidden", default: true}
       
       

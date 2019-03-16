@@ -36,6 +36,7 @@ const MainLayout = styled.main`
   }
   .portfolio {
     padding-left:70px;
+    margin-top: -2rem;
   }
   
 `;

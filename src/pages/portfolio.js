@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from  '../components/layout';
+import Projects from '../components/projects'
 
 const Portfolio = ({location}) => (
     <Layout location={location}>
-    <h1>My Work</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates repellendus? Aperiam exercitationem similique voluptas atque, ratione eligendi expedita minima sed praesentium deserunt doloribus quas dolorum? Modi fuga eos facilis.</p>
+        <Projects/>
     </Layout>
 );
 export default Portfolio

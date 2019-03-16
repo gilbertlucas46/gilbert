@@ -98,7 +98,7 @@ export default class ServicesComponent extends Component {
           <ServiceList>
             <Slider {...settings} >
             {allMarkdownRemark.edges.map(edge => (
-              <div key={edge.node.frontmatter.title}>
+              <div key={edge.node.frontmatter.id}>
                 <div className="slide">
                 <h3>{edge.node.frontmatter.title}</h3>
                 <Img fluid={edge.node.frontmatter.thumbnail.childImageSharp.fluid} />
