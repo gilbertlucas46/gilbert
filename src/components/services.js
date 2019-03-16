@@ -1,29 +1,55 @@
 import React, { Component } from 'react'
-import { graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from "gatsby"
+import styled from 'styled-components'
 import Layout from './layout';
 
 
-export default class services extends Component {
-  render() {
-    return (
-      <Layout>
-        lorem   
-      </Layout>
-    )
-  }
-}
-
- export const query = graphql`
-  query services {
+const SERVICES_QUERY = graphql`
+  query Services {
     allMarkdownRemark(filter: {frontmatter: {categories: {eq: "services"}}}) {
-        edges {
-        node {
-            frontmatter {
-            categories
-            thumbnail
+            edges {
+                node {
+                    frontmatter {
+                        categories
+                        thumbnail
+                        title
+                    }
+                }
             }
         }
-        }
-    }
     }
 `;
+
+const ServiceList = styled.ul`
+  padding:0;
+  margin:0;
+  list-style:none; 
+  a {
+    font-size: 0.8rem;
+    text-decoration:underline;
+    color: #524763;
+  }
+`;
+
+const ServicesComponent = () => (
+    <StaticQuery
+      query={SERVICES_QUERY}
+      render={({allMarkdownRemark}) => (
+        <>
+          <div>
+              <h3>Archive</h3>
+              <ServiceList>
+              {allMarkdownRemark.edges.map(edge => (
+                  <li key={edge.node.frontmatter.title}>
+                    {edge.node.frontmatter.title}
+                  </li>
+              ))}
+              </ServiceList>
+          </div>
+        </>
+      )}
+    />
+  )
+  
+  export default ServicesComponent
+  

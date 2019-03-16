@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from  '../components/layout';
 import styled from 'styled-components'
 import Logo from '../components/logo'
+import ServicesComponent from '../components/services'
+
 
 const ServicesContent = styled.div`
     width:88%;
@@ -25,13 +27,14 @@ const ServicesContent = styled.div`
 
 const Services = ({location}) => (
     <Layout location={location}>
-    <ServicesContent>
-          <div>
-          <h1>My Services</h1>
-          <p>Building small to large web apps with ReactJS, React Native
-          GatsbyJS, NextJS. GraphQL.</p>
-          <Logo/>
-          </div>
+        <ServicesContent>
+            <div>
+                <h1>My Services</h1>
+                <p>Building small to large web apps with ReactJS, React Native
+                GatsbyJS, NextJS. GraphQL.</p>
+                <ServicesComponent/>
+                <Logo/>
+            </div>
         </ServicesContent>
     </Layout>
 );
