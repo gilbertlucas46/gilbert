@@ -1,10 +1,39 @@
 import React from 'react';
 import Layout from  '../components/layout';
+import styled from 'styled-components'
+import Logo from '../components/logo'
+
+const ContactContent = styled.div`
+    width:88%;
+    max-width:772px;
+    height: 95vh;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main-axis vertical */
+    justify-content: center; /* align items vertically, in this case */
+    p {
+        font-size: 1.2rem;
+        color: #BCB2B2;
+        line-height:2rem;
+    }
+    h4 {
+        border-color:#BCB2B2;
+        font-size:1.5rem;
+        font-weight:normal;
+      
+`;
+
+
 
 const Contact = ({location}) => (
     <Layout location={location}>
-    <h1>Contact me</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates repellendus? Aperiam exercitationem similique voluptas atque, ratione eligendi expedita minima sed praesentium deserunt doloribus quas dolorum? Modi fuga eos facilis.</p>
+    <ContactContent>
+          <div>
+          <h1>My Services</h1>
+          <p>Building small to large web apps with ReactJS, React Native
+          GatsbyJS, NextJS. GraphQL.</p>
+          <Logo/>
+          </div>
+        </ContactContent>
     </Layout>
 );
 export default Contact

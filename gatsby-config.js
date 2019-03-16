@@ -37,7 +37,7 @@ module.exports = {
         },
         {
           name:"stack",
-          link: "https://stackoverflow.com/users/2895356/bert-lucas"
+          link: "https://stackoverflow.com/users/2895356/gilbert-lucas"
         },
         {
           name:"github",
@@ -77,6 +77,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/posts`,
         name: 'posts',
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/services`,
+        name: 'services',
       }
     },
     {

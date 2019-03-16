@@ -15,3 +15,27 @@ collections:
     fields:
       - { label: 'Team Member', name: 'title', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
+  - name: 'services'
+    label: 'Services'
+    folder: 'src/services'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Service', name: 'title', widget: 'string' }
+      - { label: "Service Image", name: "thumbnail", widget: "image"}
+      - { label: 'Categories', name: 'categories', widget: 'string', required: true }
+      - { label: "Type", name: "type", widget: "hidden", default: true}
+  - name: 'myworks'
+    label: 'My Works'
+    folder: 'src/myworks'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Project Name', name: 'title', widget: 'string' }
+      - { label: "Image", name: "thumbnail", widget: "image"}
+      - { label: 'Categories', name: 'categories', widget: 'string', required: true }
+      - { label: 'Project Nature', name: 'nature', widget: 'string' }
+      - { label: 'info', name: 'info', widget: 'markdown' }
+      - { label: "Type", name: "type", widget: "hidden", default: true}
+      
+      

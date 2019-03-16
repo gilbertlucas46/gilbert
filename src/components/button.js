@@ -6,7 +6,7 @@ const ButtonContainer = styled.div`
     height: 3rem;
     border: 2px solid #ED2654;
     border-radius: 4px;
-    padding: 0 20px;
+    padding: 0 1rem;
     display: inline-block;
     line-height: 2.9rem;
     font-size: 1.2rem;
@@ -21,7 +21,7 @@ const ButtonContainer = styled.div`
     transition: all 200ms ease-in;
     transform: scale(1);
     text-align:center;
-    max-width:13rem;
+    max-width:14rem;
     &:hover {
     background-color: #ED2654;
     border: 2px solid #ED2654;

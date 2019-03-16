@@ -11,22 +11,23 @@ const AboutContent = styled.div`
     display: flex; /* establish flex container */
     flex-direction: column; /* make main-axis vertical */
     justify-content: center; /* align items vertically, in this case */
-    p {
+     p {
         font-size: 1.2rem;
         color: #BCB2B2;
-        line-height:1.8rem;
+        line-height:2rem;
     }
     h4 {
         border-color:#BCB2B2;
         font-size:1.5rem;
         font-weight:normal;
-        margin-bottom:1rem;
+        margin-bottom: 1rem
     }
     .specs {
         color: #575454;
         font-weight:normal;
         margin-bottom:1rem;
         font-size:1.2rem;
+        line-height:1.7rem;
     }
 `;
 const Divider = styled.div`
@@ -39,11 +40,11 @@ const Divider = styled.div`
 const Profile = ({location}) => (
     <Layout location={location}>
         <AboutContent>
-            <h1>About Us</h1>
+            <h1>About Me</h1>
             <p>I am a Full Stack Web Developer and UI/UX Javascript specialist based in Philippines.</p>
             <Divider/>
             <h4>Development Stack</h4>
-            <div className="specs">ReactJS, GatsbyJS, NextJS, GraphQL, CSSGrid, Netlify, Apollo, Prisma</div>
+            <div className="specs">ReactJS, GatsbyJS, NextJS, GraphQL, CSSGrid, Styled-Components, Netlify, Apollo, Prisma</div>
             <h4>Design tools</h4>
             <div className="specs">Adobe XD, Figma, Adobe Illustrator, Adobe Photoshop</div>
             <Button>

@@ -10,6 +10,7 @@ const MyLogo = styled.div`
     bottom:0;
     margin:auto;
     right:15%;
+    z-index:-1;
 `;
 
 

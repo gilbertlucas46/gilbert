@@ -18,27 +18,18 @@ const MainLayout = styled.main`
     font-weight:normal;
     letter-spacing: 2px;
     font-size: 3.5rem;
-    @media (max-width: 767px) {
-      font-size: 2.5rem;
-      line-height:3.8rem;
-    }
   }
   h2 {
     font-size:1.5rem;
     letter-spacing: 2px;
     font-weight:normal;
     margin: 2rem 0;
-    @media (max-width: 767px) {
-      font-size:1.2rem;
-      line-height:1.8rem;
-      margin: 1rem 0;
-    }
   }
   .contents{
     @media (min-width: 1440px) {
     padding-left:8%;
     }
-    @media (max-width: 1399px) {
+    @media (max-width: 1439px) {
       padding-left:100px;
       padding-right:20px;
     }
