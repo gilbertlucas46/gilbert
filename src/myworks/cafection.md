@@ -4,10 +4,9 @@ thumbnail: /img/cafection.jpg
 categories: mywork
 nature: Frontend
 info: >-
-  [Bemyguest.com.sg](bemyguest.com.sg) - Asia’s largest aggregator of
-  attraction, tour and activity products, and designers of innovative tech
-  solutions tailor-made especially for Asia’s unique experiential travel
-  ecosystem.
+  [Cafection.com](http://www.cafection.com) - Creates, designs and builds top
+  quality coffee machines equipped with our unique reverse French press for an
+  array of industries all across North America.
 type: true
 ---
 
