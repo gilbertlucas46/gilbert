@@ -11,7 +11,6 @@ const SERVICES_QUERY = graphql`
                 node {
                     frontmatter {
                         categories
-                        thumbnail
                         title
                     }
                 }
@@ -37,7 +36,6 @@ const ServicesComponent = () => (
       render={({allMarkdownRemark}) => (
         <>
           <div>
-              <h3>Archive</h3>
               <ServiceList>
               {allMarkdownRemark.edges.map(edge => (
                   <li key={edge.node.frontmatter.title}>
