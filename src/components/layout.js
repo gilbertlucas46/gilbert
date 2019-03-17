@@ -13,6 +13,13 @@ const MainLayout = styled.main`
   max-width:100%;
   padding-top:2rem;
   height:100vh;
+  a {
+    color:#ED2654;
+    text-decoration:none;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
   h1 {
     color:#ED2654;
     font-weight:normal;

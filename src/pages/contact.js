@@ -21,7 +21,7 @@ const ContactContent = styled.div`
         border-color:#BCB2B2;
         font-size:1.5rem;
         font-weight:normal;
-      
+    }
 `;
 
 
@@ -30,10 +30,27 @@ const Contact = ({location}) => (
     <Layout location={location}>
     <ContactContent>
           <div>
-          <h1>My Services</h1>
-          <p>Building small to large web apps with ReactJS, React Native
-          GatsbyJS, NextJS. GraphQL.</p>
-          <Logo/>
+            <h1>Contact Me</h1>
+            <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> email me if you have
+            any other questions.</p>
+            <form name="contact" method="POST" 
+            netlify-honeypot="bot-field" 
+            data-netlify-recaptcha="true"
+            data-netlify="true">
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <p>
+                <label>Email: <input type="text" name="email" /></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+            </form>
+            <Logo/>
           </div>
         </ContactContent>
     </Layout>
