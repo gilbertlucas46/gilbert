@@ -34,9 +34,6 @@ const Contact = ({location}) => (
             <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> email me if you have
             any other questions.</p>
             <form name="contact" method="POST" data-netlify="true" action="/thankyou">
-            <p class="hidden">
-                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-            </p>
             <p>
                 <label>Email: <input type="text" name="email" /></label>
             </p>
