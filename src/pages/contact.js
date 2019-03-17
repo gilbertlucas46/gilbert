@@ -33,10 +33,7 @@ const Contact = ({location}) => (
             <h1>Contact Me</h1>
             <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> email me if you have
             any other questions.</p>
-            <form name="contact" method="POST" 
-            netlify-honeypot="bot-field" 
-            data-netlify-recaptcha="true"
-            data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" action="/thankyou">
             <p class="hidden">
                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </p>
