@@ -33,15 +33,17 @@ const Contact = ({location}) => (
             <h1>Contact Me</h1>
             <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> email me if you have
             any other questions.</p>
-            <form name="contact" method="POST" data-netlify="true" action="/thankyou">
+            <form 
+            name="contact" 
+            method="post" 
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            >
             <p>
-                <label>Email: <input type="text" name="email" /></label>
+                <label>name: <input type="text" name="name" /></label>
             </p>
             <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
+                <button>Send</button>
             </p>
             </form>
             <Logo/>
