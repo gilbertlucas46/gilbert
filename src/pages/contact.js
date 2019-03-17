@@ -33,7 +33,7 @@ const Contact = ({location}) => (
             <h1>Contact Me</h1>
             <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> email me if you have
             any other questions.</p>
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thankyou">
             {/* You still need to add the hidden input with the form name to your JSX form */}
             <input type="hidden" name="form-name" value="contact" />
             <p>
