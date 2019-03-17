@@ -26,9 +26,17 @@ const HomeWrapper = styled.div`
     }
   }
   h1 {
-  color: #ffff;
+    color: #ffff;
   }
-  
+  h2 {
+    @media (max-width:767px) {
+      line-height:1.8; 
+      margin-top:1rem;
+      span.im {
+        display:none;
+      }
+    }
+  }
 `;
 
 
@@ -56,7 +64,7 @@ const IndexPage = ({location}) => (
           </div>
           <div className="caption">
             <h1>Hey! I'm <strong>Gilbert</strong></h1>
-            <h2>I'm a <Scrable/></h2>
+            <h2><span className="im">I'm a </span><Scrable/></h2>
             <Button> <Link to={`/contact`}>Contact me</Link></Button>
           </div>
           <Logo/>

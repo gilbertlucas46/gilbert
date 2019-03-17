@@ -18,7 +18,17 @@ const MainLayout = styled.main`
     font-weight:normal;
     letter-spacing: 2px;
     font-size: 3.5rem;
+    @media (min-width:376px) and (max-width:767px) {
+        line-height:1.5;
+        margin-bottom: 0;
+    }
+    @media (max-width:375px) {
+      font-size: 2.5rem;
+      line-height:1.5;
+      margin-bottom: 0;
   }
+  }
+  
   h2 {
     font-size:1.5rem;
     letter-spacing: 2px;

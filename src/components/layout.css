@@ -272,12 +272,12 @@ h1 {
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: 'lessregular';
-   
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
 }
+
 h2 {
   margin-left: 0;
   margin-right: 0;

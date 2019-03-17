@@ -4,12 +4,14 @@ import styled from 'styled-components'
 import Logo from '../components/logo'
 
 const ContactContent = styled.div`
-    width:88%;
     max-width:772px;
     height: 95vh;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main-axis vertical */
     justify-content: center; /* align items vertically, in this case */
+    @media (min-width:1440px) {
+        width:88%;
+    }
     p {
         font-size: 1.2rem;
         color: #BCB2B2;
