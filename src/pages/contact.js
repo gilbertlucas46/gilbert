@@ -98,6 +98,7 @@ const TextInput = ({
         method="POST"
         data-netlify-recaptcha="true"
         data-netlify="true"
+        action="/thankyou"
       >
       <input type="hidden" name="form-name" value="contact" />
         <TextInput
