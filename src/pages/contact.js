@@ -94,7 +94,7 @@ const TextInput = ({
     return (
       <form
         onSubmit={handleSubmit}
-        name="contact"
+        name="contact2"
         method="POST"
         data-netlify-recaptcha="true"
         data-netlify="true"
