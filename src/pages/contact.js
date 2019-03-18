@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from  '../components/layout';
 import styled from 'styled-components'
 import Logo from '../components/logo'
+import Button from '../components/button'
 
 import { withFormik } from "formik";
 import * as Yup from "yup";
@@ -98,6 +99,7 @@ const TextInput = ({
         data-netlify-recaptcha="true"
         data-netlify="true"
       >
+      <input type="hidden" name="form-name" value="contact" />
         <TextInput
           id="firstName"
           type="text"
@@ -128,6 +130,7 @@ const TextInput = ({
           onChange={handleChange}
           onBlur={handleBlur}
         />
+        <Button>
         <button
           type="button"
           className="outline"
@@ -136,13 +139,15 @@ const TextInput = ({
         >
           Reset
         </button>
+        </Button>
+        
         <button type="submit" disabled={isSubmitting}>
           Submit
         </button>
       </form>
     );
   };
-  
+
   const MyEnhancedForm = formikEnhancer(MyForm);
 const ContactContent = styled.div`
     max-width:772px;
