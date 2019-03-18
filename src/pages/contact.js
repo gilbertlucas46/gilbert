@@ -25,6 +25,10 @@ const formikEnhancer = withFormik({
     mapPropsToValues: ({ user }) => ({
       ...user
     }),
+    handleSubmit: (payload, { setSubmitting }) => {
+      alert(payload.email);
+      setSubmitting(false);
+    },
     displayName: "MyForm"
   });
 
@@ -83,17 +87,18 @@ const TextInput = ({
       dirty,
       handleChange,
       handleBlur,
+      handleSubmit,
       handleReset,
       isSubmitting
     } = props;
     return (
       <form
+      onSubmit={handleSubmit}
         name="contact"
         method="post"
         data-netlify-recaptcha="true"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action="/thankyou"
       >
       <input type="hidden" name="form-name" value="contact" />
         <TextInput
