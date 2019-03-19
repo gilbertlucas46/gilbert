@@ -36,10 +36,6 @@ module.exports = {
           link: "https://www.linkedin.com/in/gilbertlucas"
         },
         {
-          name:"stack",
-          link: "https://stackoverflow.com/users/2895356/gilbert-lucas"
-        },
-        {
           name:"github",
           link: "https://github.com/gilbertlucas46"
         }
