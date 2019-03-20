@@ -37,9 +37,9 @@ collections:
       - { label: 'Project Nature', name: 'nature', widget: 'string' }
       - { label: 'info', name: 'body', widget: 'markdown' }
       - { label: "Type", name: "type", widget: "hidden", default: true}
-  - name: 'myworks'
-      label: 'My Works'
-      folder: 'src/myworks'
+  - name: 'posts'
+      label: 'My Posts'
+      folder: 'src/posts'
       create: true
       slug: '{{fields.title}}'
       identifier_field: name
