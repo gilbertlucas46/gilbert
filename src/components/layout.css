@@ -1,8 +1,21 @@
 :root{
   --body-color: #242527;
   --grey-light:#BCB2B2;
+  --pink:#ED2654;
+  --white: #fff;
+}
+@-webkit-keyframes autofill {
+  to {
+      color: var(--white);
+      background: transparent;
+      border-bottom: 2px solid var(--pink);
+  }
 }
 
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
 body::-webkit-scrollbar {
   width: .6rem;
 }
@@ -221,6 +234,9 @@ html {
 @media (max-width: 767px) {
   html {
     font: 85%/1em 'lessregular' !important;
+  }
+  p {
+    line-height: 1.4 !important;
   }
 }
 @media (min-width: 768px) and (max-width:1440px) {

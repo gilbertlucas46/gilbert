@@ -47,7 +47,7 @@ const MainLayout = styled.main`
     padding-left:8%;
     }
     @media (max-width: 1439px) {
-      padding-left:100px;
+      padding-left:90px;
       padding-right:20px;
     }
   }

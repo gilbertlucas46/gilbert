@@ -29,6 +29,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
+    "react-rangeslider": "^2.2.0",
     "react-scramble": "^0.2.0",
     "react-slick": "^0.23.2",
     "react-spring": "^8.0.9",
