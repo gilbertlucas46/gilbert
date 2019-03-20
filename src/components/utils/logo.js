@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import logoFaded from '../images/logo-faded.png'
+import logoFaded from '../../images/logo-faded.png'
 
 const MyLogo = styled.div`
     position: fixed;

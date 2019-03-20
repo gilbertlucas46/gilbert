@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from  '../components/layout';
 import styled from 'styled-components'
-import Logo from '../components/logo'
-import Button from '../components/button'
+import Logo from '../components/utils/logo'
+import Button from '../components/utils/button'
 
 const AboutContent = styled.div`
     max-width:772px;

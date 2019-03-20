@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql,Link } from "gatsby"
 import Layout from '../components/layout'
-import Scrable from '../components/scrable'
-import Button from '../components/button'
+import Scrable from '../components/utils/scrable'
+import Button from '../components/utils/button'
 
-import Logo from '../components/logo'
+import Logo from '../components/utils/logo'
 
 const HomeWrapper = styled.div`
   height: 95vh;

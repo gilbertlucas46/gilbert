@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Logo from './logo'
-import Button from './button'
+import Logo from './utils/logo'
+import Button from './utils/button'
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
 
