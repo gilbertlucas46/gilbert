@@ -1,7 +1,10 @@
 ---
- slug: "/second-post"
- date: "2019-02-24" 
- title: "Our Second Post"
+title: Our Second Post
+thumbnail: >-
+  https://raw.githubusercontent.com/gilbertlucas46/gilbert/master/static/img/2ideas.jpg
+date: '2019-02-24'
+post: blog
+tags: javascript
 ---
 
  # Yo!
