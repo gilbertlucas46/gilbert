@@ -1,6 +1,7 @@
 import React from "react"
 import { Spring } from 'react-spring/renderprops'
 import PropTypes from "prop-types"
+import Img from 'gatsby-image'
 import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 import Header from "./header"

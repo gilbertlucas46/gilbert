@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "gilbert";
-  src:url("../fonts/gilbert.eot");
-  src:url("../fonts/gilbert.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/gilbert.woff") format("woff"),
-    url("../fonts/gilbert.ttf") format("truetype"),
-    url("../fonts/gilbert.svg#gilbert") format("svg");
+  src:url("../../fonts/gilbert.eot");
+  src:url("../../fonts/gilbert.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/gilbert.woff") format("woff"),
+    url("../../fonts/gilbert.ttf") format("truetype"),
+    url("../../fonts/gilbert.svg#gilbert") format("svg");
   font-weight: normal;
   font-style: normal;
 

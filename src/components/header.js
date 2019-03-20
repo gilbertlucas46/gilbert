@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import logo from "../images/gilbert-logo.svg"
 
-import "./gilbert-fonts.css"
+import "./utils/gilbert-fonts.css"
 
 const HeaderWrapper = styled.div`
   position:fixed;

@@ -1,10 +1,7 @@
 ---
-title: Our First Post
-thumbnail: >-
-  https://raw.githubusercontent.com/gilbertlucas46/gilbert/master/static/img/aladdin-print-phil.jpg
-date: '2019-02-22'
-post: blog
-tags: CSS
+ slug: "/first-post"
+ date: "2019-02-22" 
+ title: "Our First Post"
 ---
 
  # Hello

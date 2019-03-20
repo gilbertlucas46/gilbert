@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Layout from  '../components/layout';
-import ContactForm from '../components/contact-form'
+import ContactForm from '../components/utils/contact-form'
 import styled from 'styled-components'
 
 
