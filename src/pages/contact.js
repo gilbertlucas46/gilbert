@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import Layout from  '../components/layout';
-import ContactForm from '../components/utils/contact-form'
+import ContactForm from '../components/contact-form'
 import styled from 'styled-components'
 
 
 const ContactPage = styled.div`
   max-width:772px; 
   padding: 5rem 0;
+  p {
+
+  }
 `;
 
 export default class Contact extends Component {

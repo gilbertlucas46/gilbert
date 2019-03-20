@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Logo from '../logo'
-import Button from '../button'
+import Logo from './logo'
+import Button from './button'
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
 
@@ -63,15 +63,15 @@ const ContactContent = styled.div`
           .slider-group {
             height:70px;
             margin-bottom: 4rem;
-            label {
-              span {
+            .mlabel {
+              
                 @media (min-width:768px) {
                 display:none;
               }
               @media (max-width:767px) {
                 display:inline;
               }
-              }
+              
             }
             .value{
               @media (min-width:768px) {
@@ -262,8 +262,8 @@ export default class ContactForm extends Component {
                 <div className="form-group">
                 <div className='slider'>
                   <div className="slider-group">
-                  <label htmlFor="budget">Budget <span>{formarMoney(budget)}</span></label>
-                  <input type="text" id="budget" name="budget" value={budget} className="hiddenField"/>
+                  <label htmlFor="budget">Budget: </label><span className="mlabel"> {formarMoney(budget)}</span>
+                  <input type="text" id="budget" name="budget" value={`${budget} USD`} className="hiddenField"/>
                     <div className="sliderContainer">
                     <Slider
                       min={3000}
@@ -278,8 +278,8 @@ export default class ContactForm extends Component {
                     </div>
                   </div>
                   <div className="slider-group">
-                  <label htmlFor="deadline">Deadline <span>{formatDeadline(deadline)}</span></label>
-                  <input type="text" id="deadline" name="deadline" value={deadline} className="hiddenField"/>
+                  <label htmlFor="deadline">Deadline: </label><span className="mlabel"> {formatDeadline(deadline)}</span>
+                  <input type="text" id="deadline" name="deadline" value={`${deadline} Months`} className="hiddenField"/>
                     <div className="sliderContainer">
                     <Slider
                       min={3}
@@ -297,7 +297,7 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                 <div className="form-group">
-                  <textarea placeholder="Project details" id="project-details" rows="8"></textarea>
+                  <textarea name="details" placeholder="Project details" id="project-details" rows="8"></textarea>
                 </div>
                 <div className="form-group sendButton">
                 <Button><button>Send</button></Button>
