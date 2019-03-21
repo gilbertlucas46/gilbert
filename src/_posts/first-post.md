@@ -4,9 +4,9 @@ date: 2019-03-21T02:52:33.376Z
 tags:
   - javascript
 thumbnail: >-
-  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/frontend.jpg
+  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/bemyguest.jpg
 comments: true
-categories: blogpost
+type: blogpost
 ---
 
  # Hello
