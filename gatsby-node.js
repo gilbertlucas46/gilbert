@@ -6,17 +6,18 @@ exports.createPages = ({ graphql, actions }) => {
   const blogPostTemplate = path.resolve(`src/components/postLayout.js`)
   return new Promise((resolve, reject) => {
     graphql(`
-      {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                slug
+    {
+      allMarkdownRemark(filter: {frontmatter: {categories: {eq: "blogpost"}}}) {
+              edges {
+                  node {
+                      frontmatter {
+                          slug
+                      }
+                  }
               }
-            }
           }
-        }
-      }    
+      }
+         
       `).then(results => {
         results.data.allMarkdownRemark.edges.forEach(({node}) => {
           createPage({
@@ -35,3 +36,5 @@ exports.createPages = ({ graphql, actions }) => {
   exports.onCreateNode = ({ node }) => {
     fmImagesToRelative(node);
   };
+
+  

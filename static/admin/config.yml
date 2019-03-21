@@ -40,16 +40,16 @@ collections:
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
-    folder: "src/_posts"
+    folder: "src/posts"
     create: true
-    slug: "{{title}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", default: "Title"}
       - { label: "Date", name: "date", widget: "date"}
       - { label: "Tags", name: "tags", widget: "list", required: false}
-      - { label: "Blog Image", name: "thumbnail", widget: "image"}
+      - { label: "Post Image", name: "thumbnail", widget: "image"}
       - { label: "Comments", name: "comments", widget: "boolean", default: true}
-      - { label: 'Type', name: 'categories', widget: 'string', default: "blogpost"}
+      - { label: 'Type', name: 'type', widget: 'string', default: "blogpost"}
       - { label: "Body", name: "body", widget: "markdown"}
-      
+
       

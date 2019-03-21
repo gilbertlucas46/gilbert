@@ -1,15 +1,16 @@
 ---
+slug: "/title-here"
 title: Title here
 date: 2019-03-21T03:42:54.910Z
 tags:
   - css
-thumbnail: /img/angloinfo.jpg
+thumbnail: /img/2ideas.jpg
 comments: true
 categories: blogpost
 ---
 
 
-\# Hello
+# Hello
 
 
 
@@ -17,7 +18,7 @@ mixtape blog normcore gluten-free umami Williamsburg retro forage semiotics legg
 
 
 
-\## This heading
+## This heading
 
 
 
