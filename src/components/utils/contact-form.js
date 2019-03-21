@@ -222,7 +222,7 @@ export default class ContactForm extends Component {
     const deadlineLabels = {
       3: '-6 Months',
       13: '-14 Months',
-      22: '+12 Months',
+      22: '+22 Months',
     }
     const formarMoney = value => value + ' USD'
     const formatDeadline = p => p + ' Months'
