@@ -48,10 +48,6 @@ const HeaderContent = styled.div`
    
   }
   nav {
-    height:288px;
-    @media (min-height:  568px) and (max-height: 700px) {
-      height: 200px;
-    }
     li {
       display: flex;
       align-items: center;
