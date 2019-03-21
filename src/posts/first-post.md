@@ -1,13 +1,16 @@
 ---
-title: Third post
+slug: "/my-first-post"
+title: My First Post
+date: 2019-03-21T02:52:33.376Z
+tags:
+  - javascript
 thumbnail: >-
-  https://raw.githubusercontent.com/gilbertlucas46/gilbert/master/static/img/frontend.jpg
-date: 2019-03-21T00:56:24.564Z
-categories: blog
-tags: javascript
-type: true
+  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/fullstack.jpg
+comments: true
+categories: blogpost
 ---
-# Hello
+
+ # Hello
 
 mixtape blog normcore gluten-free umami Williamsburg retro forage semiotics leggings single-origin coffee fashion axe Truffaut paleo tote bag XOXO chillwave aesthetic drinking vinegar Schlitz salvia art party messenger bag skateboard swag bitters vegan deep v mumblecore selvage biodiesel hoodie Helvetica 3 wolf moon dreamcatcher Brooklyn Vice Blue Bottle chambray chia High Life pug Neutra organic crucifix butcher PBR Marfa pop-up heirloom flannel Odd Future meh try-hard trust fund typewriter flexitarian pickled banjo quinoa synth cray 8-bit actually 90's Austin Intelligentsia small batch sustainable craft beer brunch Pinterest jean shorts ugh irony DIY Pitchfork VHS pork belly church-key whatever mustache Shoreditch fap tousled cliche food truck disrupt Bushwick Thundercats tattooed hella viral kogi squid occupy cornhole cred lomo Cosby sweater bespoke fanny pack street art keffiyeh Tonx kale chips you probably haven't heard of them narwhal fixie McSweeney's Portland shabby chic kitsch polaroid photo booth banh mi authentic American Apparel meggings gastropub asymmetrical next level iPhone master cleanse gentrify mlkshk post-ironic selfies cardigan yr Godard fingerstache +1 before theyssd sold out direct trade  twee Carles Tumblr pour-over vinyl beard Banksy PBR&B locavore readymade seitan ethical letterpress stumptown sriracha slow-carb farm-to-table Echo Park scenester raw denim Kickstarter Wes Anderson literally keytar roof party four loko freegan bicycle rights wayfarers YOLO plaid put a bird on it hashtag wolf sartorial artisan lo-fi distillery tofu ennui Etsy
 
@@ -17,4 +20,4 @@ Pcraft beer cray gentrify locavore Williamsburg dreamcatcher leggings sartorial 
 
 ## More heading
 
-direct trade  Neutra Intelligentsia Vice ethical polaroid cliche single-origin coffee church-key hella Tonx yr ugh bespoke Portland kogi tofu Brooklyn blog put a bird on it vegan fashion axe authentic messenger bag whatever cray Pitchfork lo-fi salvia mixtape mustache lomo wolf vinyl Schlitz paleo chillwave Truffaut gentrify tousled asymmetrical DIY butcher Bushwick 8-bit wayfarers scenester Marfa next level jean shorts irony occupy Shoreditch cred Etsy pug Wes Anderson iPhone swag VHS 90's chambray twee PBR meggings heirloom farm-to-table fingerstache bitters art party raw denim keffiyeh sartorial quinoa cornhole Banksy pop-up street art pour-over Blue Bottle slow-carb Echo Park sriracha keytar shabby chic Odd Future tattooed locavore ennui try-hard Kickstarter post-ironic High Life Tumblr selfies literally 3 wolf moon hashtag viral you probably haven't heard of them banh mi Cosby sweater biodiesel umami semiotics seitan YOLO Thundercats chia +1 leggings meh readymade Williamsburg tote bag pork belly master cleanse Pinterest banjo drinking vinegar sustainable beard aesthetic skateboard McSweeney's fap stumptown dreamcatcher hoodie American Apparel four loko disrupt Austin organic small batch narwhal before they sold out kitsch PBR&B freegan cardigan kale chips distillery actually gastropub letterpress mumblecore flannel craft beer synth fanny pack retro forage mlkshk flexitarian food truck selvage Helvetica squid crucifix trust fund pickled XOXO fixie photo booth norm
+direct trade  Neutra Intelligentsia Vice ethical polaroid cliche single-origin coffee church-key hella Tonx yr ugh bespoke Portland kogi tofu Brooklyn blog put a bird on it vegan fashion axe authentic messenger bag whatever cray Pitchfork lo-fi salvia mixtape mustache lomo wolf vinyl Schlitz paleo chillwave Truffaut gentrify tousled asymmetrical DIY butcher Bushwick 8-bit wayfarers scenester Marfa next level jean shorts irony occupy Shoreditch cred Etsy pug Wes Anderson iPhone swag VHS 90's chambray twee PBR meggings heirloom farm-to-table fingerstache bitters art party raw denim keffiyeh sartorial quinoa cornhole Banksy pop-up street art pour-over Blue Bottle slow-carb Echo Park sriracha keytar shabby chic Odd Future tattooed locavore ennui try-hard Kickstarter post-ironic High Life Tumblr selfies literally 3 wolf moon hashtag viral you probably haven't heard of them banh mi Cosby sweater biodiesel umami semiotics seitan YOLO Thundercats chia +1 leggings meh readymade Williamsburg tote bag pork belly master cleanse Pinterest banjo drinking vinegar sustainable beard aesthetic skateboard McSweeney's fap stumptown dreamcatcher hoodie American Apparel four loko disrupt Austin organic small batch narwhal before they sold out kitsch PBR&B freegan cardigan kale chips distillery actually gastropub letterpress mumblecore flannel craft beer synth fanny pack retro forage mlkshk flexitarian food truck selvage Helvetica squid crucifix trust fund pickled XOXO fixie photo booth normcore typewriter plaid Godard deep v brunch Carles bicycle rights roof party gluten-free artisan
