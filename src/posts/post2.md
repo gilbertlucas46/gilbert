@@ -1,14 +1,10 @@
 ---
-title: Title testing
-date: 2019-03-21T05:01:04.637Z
-tags:
-  - test
-thumbnail: >-
-  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/angloinfo.jpg
-comments: true
-type: blogpost
+ slug: "/second-post"
+ date: "2019-02-24" 
+ title: "Our Second Post"
 ---
-# Yo!
+
+ # Yo!
 
 Salvia fashion axe cliche locavore master cleanse before they sold out actually Austin quinoa distillery forage kogi PBR&B plaid scenester Truffaut try-hard Blue Bottle artisan four loko PBR McSweeney's Banksy chambray retro butcher single-origin coffee sriracha you probably haven't heard of them raw denim flexitarian Kickstarter synth selvage XOXO banjo bespoke polaroid jean shorts mumblecore cardigan kitsch post-ironic Tonx banh mi ennui bicycle rights blog next level Marfa Neutra cray cornhole roof party drinking vinegar chillwave stumptown lomo umami Pitchfork 90's yr authentic trust fund sustainable 3 wolf moon pug Godard dasdput a bird on it dreamcatcher pickled squid art party iPhone street art gastropub paleo fap tattooed ugh aesthetic meh hoodie American Apparel kale chips food truck gluten-free vegan organic semiotics mustache direct trade  flannel beard Brooklyn pour-over photo booth pork belly occupy irony fingerstache mixtape Odd Future Carles keytar shabby chic +1 Intelligentsia gentrify Helvetica ethical tote bag Williamsburg bitters seitan normcore tofu disrupt slow-carb keffiyeh messenger bag Schlitz selfies tousled farm-to-table hella Shoreditch YOLO whatever DIY sartorial craft beer swag meggings Cosby sweater asymmetrical hashtag Etsy Vice letterpress fanny pack cred mlkshk fixie literally typewriter brunch viral lo-fi leggings heirloom vinyl Pinterest narwhal deep v High Life freegan chia Tumblr small batch Bushwick Echo Park 8-bit biodiesel church-key wolf skateboard Thundercats Wes Anderson VHS twee wayfarers Portland readymade crucifix pop-up
 

@@ -1,12 +1,7 @@
 ---
-title: My First Post
-date: 2019-03-21T02:52:33.376Z
-tags:
-  - javascript
-thumbnail: >-
-  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/bemyguest.jpg
-comments: true
-type: blogpost
+ slug: "/first-post"
+ date: "2019-02-22" 
+ title: "Our First Post"
 ---
 
  # Hello

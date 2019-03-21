@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: staging
+  branch: master
   repo: gilbertlucas46/gilbert
 
 media_folder: static/img
@@ -37,19 +37,5 @@ collections:
       - { label: 'Project Nature', name: 'nature', widget: 'string' }
       - { label: 'info', name: 'body', widget: 'markdown' }
       - { label: "Type", name: "type", widget: "hidden", default: true}
-  - name: "posts"
-    label: "Posts"
-    label_singular: "Post"
-    folder: "src/posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string", default: "Title"}
-      - { label: "Date", name: "date", widget: "date"}
-      - { label: "Tags", name: "tags", widget: "list", required: false}
-      - { label: "Post Image", name: "thumbnail", widget: "image"}
-      - { label: "Comments", name: "comments", widget: "boolean", default: true}
-      - { label: 'Type', name: 'type', widget: 'string', default: "blogpost"}
-      - { label: "Body", name: "body", widget: "markdown"}
-
+      
       
