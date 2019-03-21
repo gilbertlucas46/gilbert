@@ -4,9 +4,9 @@ date: 2019-03-21T02:52:33.376Z
 tags:
   - javascript
 thumbnail: >-
-  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/fullstack.jpg
+  https://raw.githubusercontent.com/gilbertlucas46/gilbert/staging/static/img/frontend.jpg
 comments: true
-type: blogpost
+categories: blogpost
 ---
 
  # Hello
