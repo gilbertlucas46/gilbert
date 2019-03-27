@@ -189,7 +189,7 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
           {
             socialChannels.map(link =>
             <li key={link.name} style={{ 'listStyleType': 'none' }}>
-              <a href={link.link} target="_blank">
+              <a rel="noopener noreferrer" href={link.link} target="_blank">
                 <i className={`dev dev-${link.name}`}></i>
               </a>
             </li>)

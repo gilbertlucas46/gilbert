@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Scrambler, Cycler } from "react-text-scrambler";
+import { Cycler } from "react-text-scrambler";
 
 export default class Scrable extends Component {
   render() {

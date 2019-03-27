@@ -1,13 +1,15 @@
 import React from "react"
 import { Spring } from 'react-spring/renderprops'
 import PropTypes from "prop-types"
-import Img from 'gatsby-image'
 import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 import Header from "./header"
+import SEO from '../components/utils/seo/seo'
 
 import "./utils/layout.css"
 import "./utils/less-font.css"
+
+import SEOImage from '../images/gilbert-lucas.png'
 
 const MainLayout = styled.main`
   max-width:100%;
@@ -93,6 +95,12 @@ const Layout = ({ children,location }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks}  socialChannels={data.site.siteMetadata.socialChannels} />
         <MainLayout>
+        <SEO
+          title={data.site.siteMetadata.title}
+          description={data.site.siteMetadata.description}
+          image={ SEOImage }
+          pathname={location.pathname}
+        />
           <Spring
           delay={300}
           from={{ opacity: 0 }}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
@@ -161,7 +161,6 @@ const ProjectsList = styled.div`
     }
   } 
 `;
-const MAX_LENGTH = 250;
 
 export default class Projects extends Component {
   render() {

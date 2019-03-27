@@ -227,8 +227,6 @@ export default class ContactForm extends Component {
     const formarMoney = value => value + ' USD'
     const formatDeadline = p => p + ' Months'
 
-
-
     return (
         <ContactContent>
               <div>
