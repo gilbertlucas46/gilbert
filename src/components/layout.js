@@ -9,7 +9,6 @@ import SEO from '../components/utils/seo/seo'
 import "./utils/layout.css"
 import "./utils/less-font.css"
 
-import SEOImage from '../images/gilbert-lucas.png'
 
 const MainLayout = styled.main`
   max-width:100%;
@@ -70,6 +69,7 @@ const Layout = ({ children,location }) => (
           siteMetadata {
             title
             description
+            image
             menuLinks{
               name
               link
@@ -98,7 +98,7 @@ const Layout = ({ children,location }) => (
         <SEO
           title={data.site.siteMetadata.title}
           description={data.site.siteMetadata.description}
-          image={ SEOImage }
+          image={ data.site.siteMetadata.image }
           pathname={location.pathname}
         />
           <Spring

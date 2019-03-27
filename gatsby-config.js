@@ -1,11 +1,14 @@
+const url = 'https://gilbert.codes';
+
 module.exports = {
   siteMetadata: {
     title: `Gilbert Lucas  · FullStack Developer and UI/UX Javascript Specialist`,
     titleTemplate: '%s · Gilbert Lucas',
     description: `My name is Gilbert Lucas. I'm a 28-year-old web developer from Philippines with an interest in pretty much everything web! I mainly write JavaScript at present, I also do web design, but I'm up for learning pretty much anything!`,
     author: `Gilbert Lucas`,
-    url: 'https://gilbert.codes',
-    image: '/images/gilbert-lucas.png',
+    url: url,
+    siteUrl: url,
+    image: `/src/images/gilbert-lucas.png`,
     owner: 'Gilbertlucas',
     twitterUsername: '@gilbertlucas14',
     facebookAppID: '',
