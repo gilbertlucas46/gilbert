@@ -9,7 +9,6 @@ import SEO from '../components/utils/seo/seo'
 import "./utils/layout.css"
 import "./utils/less-font.css"
 
-import SEOImage from '../images/gilbert-lucas.png'
 
 const MainLayout = styled.main`
   max-width:100%;
@@ -82,11 +81,11 @@ const Layout = ({ children,location }) => (
           }
         }
         file(relativePath: {
-          regex: "/bg/"
+          regex: "/gilbert-lucas/"
         }) {
           childImageSharp {
             fluid(maxWidth:1000){
-              ...GatsbyImageSharpFluid_tracedSVG
+              src
             }
           }
         }
@@ -99,9 +98,10 @@ const Layout = ({ children,location }) => (
         <SEO
           title={data.site.siteMetadata.title}
           description={data.site.siteMetadata.description}
-          image={ SEOImage }
+          image={data.file.childImageSharp.fluid.src}
           pathname={location.pathname}
         />
+        
           <Spring
           delay={300}
           from={{ opacity: 0 }}
