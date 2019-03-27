@@ -110,7 +110,7 @@ const ContactContent = styled.div`
               margin-top:1rem;
               li {
                 margin-bottom:0;
-                width: 88px;
+                width: 100%;
                 text-align: center;
                 letter-spacing:1px;
                 @media (max-width:470px) {
@@ -222,7 +222,7 @@ export default class ContactForm extends Component {
     const deadlineLabels = {
       3: '-6 Months',
       13: '-14 Months',
-      22: '+12 Months',
+      22: '+22 Months',
     }
     const formarMoney = value => value + ' USD'
     const formatDeadline = p => p + ' Months'

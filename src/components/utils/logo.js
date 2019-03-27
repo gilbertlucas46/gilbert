@@ -16,7 +16,7 @@ const MyLogo = styled.div`
 
 const Logo = ()=> (
     <MyLogo>
-    <img className="logoFaded" src={logoFaded} alt="Level Up Tutorials Logo"/>
+    <img className="logoFaded" src={logoFaded} alt="Gilbert Lucas"/>
     </MyLogo>
   )
   export default Logo
