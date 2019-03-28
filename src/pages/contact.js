@@ -18,7 +18,7 @@ export default class Contact extends Component {
       <Layout>
         <ContactPage>
         <h1>Contact Me</h1>
-        <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> email me if you have
+        <p>Let’s build something together! Or <a href="mailto:lucas@gilbert.codes?Subject=Hi Gilbert!" target="_top">email</a> me if you have
         any other questions.</p>
         <ContactForm/>
         </ContactPage>
