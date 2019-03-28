@@ -43,7 +43,9 @@ const ContactContent = styled.div`
       }
       .sendButton {
         margin-top:2rem;
-        
+        button {
+          padding-bottom:0;
+        }
         div {
           padding: 0;
           margin: auto;
@@ -220,9 +222,9 @@ export default class ContactForm extends Component {
     }
 
     const deadlineLabels = {
-      3: '-6 Months',
-      13: '-14 Months',
-      22: '+22 Months',
+      0: '+3 Months',
+      14: '-12 Months',
+      22: '24 Months',
     }
     const formarMoney = value => value + ' USD'
     const formatDeadline = p => p + ' Months'
