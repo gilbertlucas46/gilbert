@@ -60,7 +60,7 @@ const IndexPage = ({location}) => (
       <>
         <HomeWrapper>
         <div className="fixedBG">
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Img fluid={data.file.childImageSharp.fluid} alt="Gilbert's Office Wall"/>
           </div>
           <div className="caption">
             <h1>Hey! I'm <strong>Gilbert</strong></h1>

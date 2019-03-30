@@ -32,7 +32,7 @@ const Logo = ()=> (
     render={data => (
         <>
         <MyLogo>
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Img fluid={data.file.childImageSharp.fluid} alt="Gilbert's Logo"/>
         </MyLogo>
         </>
     )}
