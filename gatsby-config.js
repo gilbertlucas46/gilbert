@@ -159,6 +159,12 @@ module.exports = {
           families: ['lessbold', 'lesslight', 'lessregular', 'gilbert']
         }
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        configFile: 'robots-txt.config.js'
+      },
+    },
   ],
 }
