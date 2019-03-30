@@ -6,7 +6,7 @@ import Twitter from './twitter';
 import Facebook from './facebook';
 
 
-const SEO = ({ title, description, image, pathname, article }) => (
+const SEO = ({ title, description, meta, keywords, lang, image, pathname, article }) => (
   <StaticQuery
     query={query}
     render={({
@@ -31,28 +31,66 @@ const SEO = ({ title, description, image, pathname, article }) => (
 
       return (
         <>
-          <Helmet title={seo.title} titleTemplate={titleTemplate}>
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
-            {seo.url && <meta property="og:url" content={seo.url} />}
-            {(article ? true : null) && (
-              <meta property="og:type" content="article" />
-            )}
-            {seo.title && <meta property="og:title" content={seo.title} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
-            <meta name="twitter:card" content="summary_large_image" />
-            {twitterUsername && (
-              <meta name="twitter:creator" content={twitterUsername} />
-            )}
-            {seo.title && <meta name="twitter:title" content={seo.title} />}
-            {seo.description && (
-              <meta name="twitter:description" content={seo.description} />
-            )}
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
-          </Helmet>
+          <Helmet title={seo.title} titleTemplate={titleTemplate}
+          htmlAttributes={{
+            lang,
+          }}
+          meta={[
+            {
+              name: `description`,
+              content: seo.description,
+            },
+            {
+              name: `image`,
+              content: seo.image,
+            },
+            {
+              property: `og:title`,
+              content: seo.title,
+            },
+            {
+              property: `og:description`,
+              content: seo.description,
+            },
+            {
+              property: `og:type`,
+              content: `website`,
+            },
+            {
+              property: `og:image`,
+              content: seo.image,
+            },
+            {
+              name: `twitter:card`,
+              content: `summary`,
+            },
+            {
+              name: `twitter:creator`,
+              content:twitterUsername,
+            },
+            {
+              name: `twitter:title`,
+              content: seo.title,
+            },
+            {
+              name: `twitter:description`,
+              content: seo.description,
+            },
+            {
+              name: `twitter:image`,
+              content: seo.image,
+            },
+          ]
+            .concat(
+              keywords.length > 0
+                ? {
+                    name: `keywords`,
+                    content: keywords.join(`, `),
+                  }
+                : []
+            )
+            .concat(meta)}
+          />
           <Facebook
             pageUrl={seo.url}
             type={article ? 'article' : null}
@@ -76,6 +114,9 @@ const SEO = ({ title, description, image, pathname, article }) => (
 export default SEO
 
 SEO.propTypes = {
+  lang: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
@@ -84,6 +125,9 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  keywords: [],
   title: null,
   description: null,
   image: null,
