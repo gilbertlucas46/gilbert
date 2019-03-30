@@ -49,7 +49,7 @@ module.exports = {
         }
       ]
   },
-  plugins: [ 
+  plugins: [
     'gatsby-plugin-sitemap',
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -152,5 +152,13 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['lessbold', 'lesslight', 'lessregular', 'gilbert']
+        }
+      }
+    }
   ],
 }
