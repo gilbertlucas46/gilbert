@@ -7,7 +7,7 @@ import Header from "./header"
 import SEO from '../components/utils/seo/seo'
 
 import "./utils/layout.css"
-import "./utils/less-font.css"
+import "./utils/miriam-font.css"
 
 
 const MainLayout = styled.main`

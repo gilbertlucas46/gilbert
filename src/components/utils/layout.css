@@ -30,7 +30,7 @@ outline: 1px solid slategrey;
 }
 
 html {
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -126,7 +126,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
   font-size: 1em;
 }
 figure {
@@ -257,7 +257,7 @@ html {
 }
 body {
   color:var(--grey-light);
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -287,7 +287,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -304,7 +304,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
    
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -321,7 +321,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
    
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -338,7 +338,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
    
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -355,7 +355,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
    
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -372,7 +372,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'lessregular';
+  font-family: 'Miriam Libre';
    
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -649,8 +649,7 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Miriam Libre';
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
