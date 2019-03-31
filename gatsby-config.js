@@ -166,5 +166,8 @@ module.exports = {
         configFile: 'robots-txt.config.js'
       },
     },
+    {
+      resolve: 'gatsby-plugin-zopfli'
+    },
   ],
 }

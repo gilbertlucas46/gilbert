@@ -48,7 +48,9 @@ const HeaderContent = styled.div`
    
   }
   nav {
-    li {
+    ul {
+      margin:0;
+      li {
       display: flex;
       align-items: center;
       margin-bottom:0;
@@ -114,6 +116,7 @@ const HeaderContent = styled.div`
         }
       }
     }
+    }
   }
   .socials{
     position: absolute;
@@ -160,6 +163,7 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
       <div className="logo">
       <Link
           to="/"
+          alt="Gilbert Logo"
           style={{
             color: `white`,
             textDecoration: `none`,
@@ -170,22 +174,24 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
       </div>
       <div className="mainNav">
       <nav>
-        {
-          menuLinks.map(link =>
-          <li key={link.name} style={{ 'listStyleType': 'none' }}>
-          <Link to={link.link} activeClassName="active">
-            <i className={`dev dev-${link.name}`}></i>
-            <span>{link.name}</span>
-          </Link>
-          </li>)
-        }
+        <ul>
+          {
+            menuLinks.map(link =>
+            <li key={link.name} style={{ 'listStyleType': 'none' }}>
+            <Link to={link.link} activeClassName="active" alt={link.name}>
+              <i className={`dev dev-${link.name}`}></i>
+              <span>{link.name}</span>
+            </Link>
+            </li>)
+          }
+        </ul>
       </nav>
       <div className="socials">
         <ul>
           {
             socialChannels.map(link =>
             <li key={link.name} style={{ 'listStyleType': 'none' }}>
-              <a rel="noopener noreferrer" href={link.link} target="_blank">
+              <a alt={link.name} rel="noopener noreferrer" href={link.link} target="_blank">
                 <i className={`dev dev-${link.name}`}></i>
               </a>
             </li>)
