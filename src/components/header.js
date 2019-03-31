@@ -164,6 +164,7 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
       <Link
           to="/"
           alt="Gilbert Logo"
+          aria-label="links to home page"
           style={{
             color: `white`,
             textDecoration: `none`,
@@ -178,7 +179,7 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
           {
             menuLinks.map(link =>
             <li key={link.name} style={{ 'listStyleType': 'none' }}>
-            <Link to={link.link} activeClassName="active" alt={link.name}>
+            <Link to={link.link} activeClassName="active" aria-label={`links to ${link.name}`} alt={link.name}>
               <i className={`dev dev-${link.name}`}></i>
               <span>{link.name}</span>
             </Link>
@@ -191,7 +192,7 @@ const Header = ({ siteTitle,menuLinks,socialChannels }) => (
           {
             socialChannels.map(link =>
             <li key={link.name} style={{ 'listStyleType': 'none' }}>
-              <a alt={link.name} rel="noopener noreferrer" href={link.link} target="_blank">
+              <a alt={link.name} aria-label={`links to ${link.name}`} rel="noopener noreferrer" href={link.link} target="_blank">
                 <i className={`dev dev-${link.name}`}></i>
               </a>
             </li>)

@@ -65,7 +65,7 @@ const IndexPage = ({location}) => (
           <div className="caption">
             <h1>Hey! I'm <strong>Gilbert</strong></h1>
             <h2><span className="im">I'm a </span><Scrable/></h2>
-            <Button> <Link alt="links to gilberts contact form" to={`/contact`}>Contact me</Link></Button>
+            <Button> <Link aria-label="links to gilberts contact form" alt="links to gilberts contact form" to={`/contact`}>Contact me</Link></Button>
           </div>
           <Logo/>
         </HomeWrapper>
