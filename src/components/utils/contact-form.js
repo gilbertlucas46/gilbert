@@ -4,6 +4,7 @@ import Logo from './logo'
 import Button from './button'
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const ContactContent = styled.div`
     form {
@@ -300,7 +301,10 @@ export default class ContactForm extends Component {
                   <textarea name="details" placeholder="Project details" id="project-details" rows="8"></textarea>
                 </div>
                 <div className="form-group sendButton">
+                
+                <OutboundLink>
                 <Button><button>Send</button></Button>
+                </OutboundLink>
                 </div>
                 </form>
                 <Logo/>
