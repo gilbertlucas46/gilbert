@@ -7,4 +7,4 @@ nature: >-
   and first class personalised services
 type: true
 ---
-A luxury resort that embodies the pristine beauty of its natural surroundings and first class personalized services. Escape to a paradise of tranquility and haven of comfort. Indulge yourself in a perfect serene lifestyle vacation.
+[Cauayan Resort](https://cauayan.netlify.com) - A luxury resort that embodies the pristine beauty of its natural surroundings and first class personalized services. Escape to a paradise of tranquility and haven of comfort. Indulge yourself in a perfect serene lifestyle vacation.
