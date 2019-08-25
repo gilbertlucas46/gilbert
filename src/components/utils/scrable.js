@@ -25,16 +25,6 @@ export default class Scrable extends Component {
     console.log(el)
   }
   render() {
-    const phrases = [
-      "Neo,",
-      "sooner or later",
-      "you're going to realize",
-      "just as I did",
-      "that there's a difference",
-      "between knowing the path",
-      "and walking the path",
-    ]
-    
     return (
       <>
         <span className="text"></span>

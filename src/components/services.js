@@ -12,7 +12,7 @@ const SERVICES_QUERY = graphql`
    query Services {
     allMarkdownRemark(filter: {frontmatter: {categories: {eq: "services"}}},sort: {
     order: DESC,
-    fields:frontmatter___thumbnail
+    fields:frontmatter___title
   }) {
             edges {
                 node {

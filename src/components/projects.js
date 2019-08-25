@@ -8,7 +8,7 @@ const PROJECTS_QUERY = graphql`
    query projects {
     allMarkdownRemark(filter: {frontmatter: {categories: {eq: "mywork"}}},sort: {
     order: DESC,
-    fields:frontmatter___thumbnail
+    fields:frontmatter___title
   }) {
             edges {
                 node {

@@ -13,7 +13,7 @@ const AboutContent = styled.div`
     @media (min-width:1440px) {
         width:90%;
     }
-     p {
+    p {
         font-size: 1.2rem;
         color: #BCB2B2;
         line-height:2rem;
@@ -149,8 +149,12 @@ const DevStack = [
         link: 'https://www.apollographql.com/docs/apollo-server/'
     },
     {
-        name: `Prisma`,
-        link: 'https://www.prisma.io'
+        name: `ExpressJS`,
+        link: 'https://expressjs.com'
+    },
+    {
+        name: `Mongodb`,
+        link: 'https://www.mongodb.com'
     }
 ];
 const DesignStack =[
