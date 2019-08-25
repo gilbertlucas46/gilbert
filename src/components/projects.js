@@ -103,8 +103,9 @@ const ProjectsList = styled.div`
           margin-bottom:15px;
         }
         h2 {
-          font-size:1.8rem;
-          font-family: 'lessbold';
+          font-size:2rem;
+          font-family: 'Miriam Libre';
+          font-weight: bold;
         }
         .info {
           position: absolute;
