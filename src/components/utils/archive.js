@@ -1,32 +1,32 @@
-import React from "react"
-import styled from 'styled-components'
-import { StaticQuery, graphql, Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { StaticQuery, graphql, Link } from "gatsby";
 
 const POST_ARHIVE_QUERY = graphql`
-query BlogPostArchive {
-    allMarkdownRemark(limit:6, sort: {
-    order: DESC
-    fields: [frontmatter___date]
-  }){
-        edges {
-            node {
-                frontmatter {
-                    title
-                    slug
-                }
-            }
+  query BlogPostArchive {
+    allMarkdownRemark(
+      limit: 6
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            slug
+          }
         }
+      }
     }
-}
+  }
 `;
 
 const ArchiveList = styled.ul`
-  padding:0;
-  margin:0;
-  list-style:none; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
   a {
     font-size: 0.8rem;
-    text-decoration:underline;
+    text-decoration: underline;
     color: #524763;
   }
 `;
@@ -34,24 +34,23 @@ const ArchiveList = styled.ul`
 const Archive = () => (
   <StaticQuery
     query={POST_ARHIVE_QUERY}
-    render={({allMarkdownRemark}) => (
+    render={({ allMarkdownRemark }) => (
       <>
         <aside>
-            <h3>Archive</h3>
-            <ArchiveList>
+          <h3>Archive</h3>
+          <ArchiveList>
             {allMarkdownRemark.edges.map(edge => (
-                <li key={edge.node.frontmatter.slug}>
+              <li key={edge.node.frontmatter.slug}>
                 <Link to={`/posts${edge.node.frontmatter.slug}`}>
-                {edge.node.frontmatter.title}
-              </Link>
-                </li>
+                  {edge.node.frontmatter.title}
+                </Link>
+              </li>
             ))}
-            </ArchiveList>
+          </ArchiveList>
         </aside>
       </>
     )}
   />
-)
+);
 
-export default Archive
-
+export default Archive;

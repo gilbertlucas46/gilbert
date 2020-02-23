@@ -2,8 +2,6 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
-
-
 const Post = styled.article`
     box-shadow: 0px 3px 10px rgba(25,17,34,0.05);
     padding: 1rem;
@@ -45,8 +43,6 @@ const LISTING_QUERY = graphql`
     }
   }
 `;
-
-
 
 const Listing = () => (
   <StaticQuery query={LISTING_QUERY}

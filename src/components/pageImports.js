@@ -4,7 +4,6 @@ import Services from '../pages/services'
 import Portfolio from '../pages/portfolio'
 import Contact from '../pages/contact'
 
-
 export {
     IndexPage,
     Profile,

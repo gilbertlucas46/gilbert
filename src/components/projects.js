@@ -5,8 +5,8 @@ import Img from 'gatsby-image'
 
 
 const PROJECTS_QUERY = graphql`
-   query projects {
-    allMarkdownRemark(filter: {frontmatter: {categories: {eq: "mywork"}}},sort: {
+  query projects {
+  allMarkdownRemark(filter: {frontmatter: {categories: {eq: "mywork"}}},sort: {
     order: DESC,
     fields:frontmatter___title
   }) {
