@@ -1,7 +1,7 @@
 ---
- slug: "/second-post"
- date: "2019-02-24" 
- title: "Our Second Post"
+title: Our Second Post
+thumbnail: /img/aladdin-print-phil.jpg
+category: design
 ---
 
  # Yo!
