@@ -1,7 +1,7 @@
 ---
- slug: "/first-post"
- date: "2019-02-22" 
- title: "Our First Post"
+title: Our First Post
+thumbnail: /img/2ideas.jpg
+category: development
 ---
 
  # Hello
