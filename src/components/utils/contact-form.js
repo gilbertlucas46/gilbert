@@ -252,7 +252,7 @@ export default class ContactForm extends Component {
                 name="company"
               />
             </div>
-            <div className="form-group" className="select">
+            <div className="form-group select">
               <label htmlFor="need">You need a..</label>
               <select
                 name="requirement"

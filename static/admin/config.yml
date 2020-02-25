@@ -37,5 +37,15 @@ collections:
       - { label: 'Project Nature', name: 'nature', widget: 'string' }
       - { label: 'info', name: 'body', widget: 'markdown' }
       - { label: "Type", name: "type", widget: "hidden", default: true}
-      
-      
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/posts'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Project Name', name: 'title', widget: 'string' }
+      - { label: "Image", name: "thumbnail", widget: "image"}
+      - { label: "Category", name: "category", widget: "select", options: ["development", "design"]}
+      - { label: 'info', name: 'body', widget: 'markdown' }
+      - { label: "Type", name: "type", widget: "hidden", default: true}
+

@@ -33,10 +33,10 @@ module.exports = {
           name:'contact',
           link:'/contact'
         },
-        /*{
+        {
           name:'blog',
           link:'/blog'
-        }*/
+        }
       ],
       socialChannels: [
         {
