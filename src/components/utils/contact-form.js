@@ -257,7 +257,7 @@ export default class ContactForm extends Component {
               <select
                 name="requirement"
                 id="need"
-                onChange={this.selectRequirement}
+                onBlur={this.selectRequirement}
               >
                 <option>Website designed &amp; developed</option>
                 <option>Website developed</option>
