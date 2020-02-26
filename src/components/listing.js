@@ -36,7 +36,6 @@ const LISTING_QUERY = graphql`
           id
           frontmatter {
             title
-            category
           }
         }
       }
