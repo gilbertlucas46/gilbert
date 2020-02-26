@@ -201,7 +201,7 @@ const Profile = ({location}) => (
             ))}
             </div>
             <Button>
-                <a rel="noopener noreferrer"  target="_blank" href="https://www.dropbox.com/s/akjqqtnbtxct8gh/Gilbert%20Lucas%20CV%28compressed%29.pdf?dl=0"> Download CV</a>
+                <a rel="noopener noreferrer"  target="_blank" href="https://www.dropbox.com/s/aeik9qqtl4ok7lp/Gilbert%20Lucas%20CV%28compressed%29.pdf?dl=0"> Download CV</a>
             </Button>
             <Logo/>
         </AboutContent>
