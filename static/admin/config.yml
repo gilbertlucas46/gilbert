@@ -48,7 +48,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Image", name: "thumbnail", widget: "image"}
-      - { label: "Category", name: "category", widget: "select", options: ["development", "design"]}
+      - { label: "Category", name: "category", widget: "select", options: ["development", "design", "lifestyle"]}
+      - { label: "Type", name: "type", widget: "select", default: "blog", options: ["blog", "page"]}
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
