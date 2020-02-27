@@ -1,7 +1,7 @@
 ---
 title: Top 10 Side Project ideas for Software Engineers
 date: 2020-02-27T14:57:17.939Z
-thumbnail: /img/2ideas.jpg
+thumbnail: /img/web-development-blog1.png
 category: development
 type: blog
 description: >-
