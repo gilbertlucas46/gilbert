@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, StaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 const Post = styled.article`
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.05);
@@ -17,6 +18,13 @@ const Post = styled.article`
   h2 {
     margin-bottom: 0;
   }
+  .gatsby-image-wrapper {
+    max-width: 200px;
+    img {
+      width:100%;
+    }
+  }
+  
   .read-more {
     font-size: 0.8rem;
     text-decoration: underline;
@@ -36,6 +44,14 @@ const LISTING_QUERY = graphql`
           id
           frontmatter {
             title
+            date
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
           }
         }
       }
@@ -57,7 +73,7 @@ const Listing = () => (
               >
                 <h2>{node.frontmatter.title}</h2>
               </Link>
-              <p>{node.excerpt}</p>
+              <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
               <p>{node.frontmatter.date}</p>
               <Link
                 className="read-more"

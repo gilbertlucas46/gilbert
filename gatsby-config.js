@@ -126,6 +126,12 @@ module.exports = {
             }
           },
           {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: "posts" // Must match the source name ^
+            }
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
