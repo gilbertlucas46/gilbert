@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
-import Logo from "../images/gilbert-logo.svg";
+import NavLogo from "../images/gilbert-logo.svg";
 import "./utils/gilbert-fonts.css";
 
 const HeaderWrapper = styled.div`
@@ -168,7 +168,7 @@ const Header = ({ siteTitle, menuLinks, socialChannels }) => (
             textDecoration: `none`
           }}
         >
-          <Logo/>
+          <NavLogo/>
         </Link>
       </div>
       <div className="mainNav">
