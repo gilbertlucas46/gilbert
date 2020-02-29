@@ -10,8 +10,25 @@ import Img from 'gatsby-image'
 // Page Query
 // Must be used on pages
 
-const BlogContainer = styled.div`
+export const BlogContainer = styled.div`
+  max-width: 900px;
+  .info {
+    margin-top: 2rem;
+  }
+`;
 
+export const BlogTitle = styled.h1`
+    position: relative;
+    padding-bottom: 2rem;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 6px;
+      bottom: 0;
+      width: 100%;
+      background-color: #171717;
+      left: 0;
+    }
 `;
 
 export default class postLayout extends Component {
@@ -23,7 +40,7 @@ export default class postLayout extends Component {
       {allMarkdownRemark.edges.map(edge => {
         return (
           <BlogContainer>
-            <h1>{edge.node.frontmatter.title}</h1>
+            <BlogTitle>{edge.node.frontmatter.title}</BlogTitle>
             <div className="info" dangerouslySetInnerHTML={{
               __html: edge.node.html
             }}/>
