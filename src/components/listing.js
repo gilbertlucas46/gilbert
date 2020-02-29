@@ -8,27 +8,42 @@ const Post = styled.article`
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 1rem;
-  a {
-    color: #000;
-    text-decoration: none;
+  background-color: hsla(0, 0%, 0%, 0.12);
+  margin-top: 2rem;
+  width: calc(100% - 2%);
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
   }
   p {
     font-size: 0.8rem;
+    color: gray;
+  }
+  .date {
+    margin-top: 1rem;
   }
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+    color: #bcb2b2;
+    margin-top: 0;
+    
   }
   .gatsby-image-wrapper {
-    max-width: 200px;
+    max-width: 500px;
     img {
       width:100%;
     }
   }
+  a {
+    &:hover {
+        text-decoration:none;
+    }
+  }
   
   .read-more {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: underline;
-    color: #524763;
+    color: #ed2654;
   }
 `;
 
@@ -44,10 +59,10 @@ const LISTING_QUERY = graphql`
           id
           frontmatter {
             title
-            date
+            date(formatString: "MMMM Do, YYYY, h:mm a")
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 300) {
+                fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
@@ -66,15 +81,16 @@ const Listing = () => (
       <>
         {allMarkdownRemark.edges.map(({ node }) => {
           const slug = node.frontmatter.title.split(" ").join("-").toLowerCase();
+          const title = node.frontmatter.title.substring(0,50)+"..."
           return (
             <Post key={node.frontmatter.title}>
               <Link
                 to={`/posts/${slug}`}
               >
-                <h2>{node.frontmatter.title}</h2>
-              </Link>
+                <h2>{title}</h2>
               <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
-              <p>{node.frontmatter.date}</p>
+              <p className="date">{node.frontmatter.date}</p>
+              </Link>
               <Link
                 className="read-more"
                 to={`/posts/${slug}`}>
