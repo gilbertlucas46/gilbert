@@ -1,5 +1,5 @@
 ---
-title: Top 10 Side Project ideas for Software Engineers
+title: "\U0001F525 Top 10 Side Project ideas for Software Engineers \U0001F468‍\U0001F4BB  "
 date: 2020-02-27T14:57:17.939Z
 thumbnail: /img/web-development-blog1.png
 category: development
@@ -18,9 +18,13 @@ By setting the bar too high — like aiming to create a successful, popular, and
 
 In this post, I want to help fight “side project paralysis” by offering side project ideas that any software developer can start in one weekend.
 
-## **4 characteristics to bake into your personal projects to maximize success**
 
-WARNING: It’s easy to overcomplicate these things. The goal is to present something finished and deployed. If you’re trying to learn a new language, or you want to learn some new aspect of it, by all means work on a project. But don’t make it something so vital that you can’t afford to mess up. You will struggle and maybe wind up hating the language. The best thing to do is something small and whimsical.
+
+## **4 characteristics to bake into your personal projects to maximize success** 💪
+
+
+
+> **WARNING:** It’s easy to overcomplicate these things. The goal is to present something finished and deployed. If you’re trying to learn a new language, or you want to learn some new aspect of it, by all means work on a project. But don’t make it something so vital that you can’t afford to mess up. You will struggle and maybe wind up hating the language. The best thing to do is something small and whimsical.
 
 ### 1. Small
 
@@ -146,7 +150,7 @@ This would be a chance to play around and have fun. This project won’t be as t
 
 **Skills:** Web development, general programming, and UI
 
-## Managing your time
+## ⌛ Managing your time
 
 Many people give up on side projects because of lack of time. The reason? They don’t manage their time well. Here are some things to maximize your success.
 
