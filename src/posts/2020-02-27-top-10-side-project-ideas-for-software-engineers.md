@@ -18,8 +18,6 @@ By setting the bar too high — like aiming to create a successful, popular, and
 
 In this post, I want to help fight “side project paralysis” by offering side project ideas that any software developer can start in one weekend.
 
-
-
 ## 4 characteristics to bake into your personal projects to maximize success
 
 WARNING: It’s easy to overcomplicate these things. The goal is to present something finished and deployed. If you’re trying to learn a new language, or you want to learn some new aspect of it, by all means work on a project. But don’t make it something so vital that you can’t afford to mess up. You will struggle and maybe wind up hating the language. The best thing to do is something small and whimsical.
@@ -46,11 +44,7 @@ What do I mean? If you are familiar with traditional web apps, build a web app, 
 
 The best place to be is to have a stable, working, deployed project that you can add features to whenever you want to learn a new skill. Maybe you’ve got a small blog engine that you can add user login to. Or a Re-frame frontend. Or a spellchecker. Or AI categorization. Each of those features is digestible on the weekend. But if you tried to do them all at once, you’d probably never finish. Build your project in pieces. But first, your main goal is to get something small and basic working and deployed.
 
-
-
 # 10 personal programming projects you can start this weekend
-
-
 
 ### 1. A web scraper that posts top 10 blogs without human intervention
 
@@ -62,23 +56,19 @@ Instead of just scraping the data, why not build a website with that data. It do
 
 You’ve now shown that you can do more than just code a small segment of a system. Instead, you can think through an entire system. You need to consider how you are going to automate the process, manage the database, create the website and select the posts. This also allows you to actually have a tangible end product.
 
-Without a tangible end product, it’s really easy to become unmotivated and simply stop at only a web scraper.
-
-In addition, you never know, maybe your site will become popular!
-
-Skills:Database, web scraper, automation, web development (for the blog), and general programming.
+Without a tangible end product, it’s really easy to become unmotivated and simply stop at only a web scraper. In addition, you never know, maybe your site will become popular!  \
+\
+ **Skills:** Database, web scraper, automation, web development (for the blog), and general programming.
 
 ### 2. An event-alert system using Meetup and Eventbrite APIs
 
 Have you ever wanted to go to a band or comedian show, but realized it was last week? Maybe there was a free conference in your area on data science or big data and you missed out because you forgot to check.
 
-Why not make your own aggregator using the[Meetup](https://www.meetup.com/meetup_api/)and[Eventbrite APIs](https://www.eventbrite.com/platform/api), that will warn you when keywords are in event descriptions or titles? Now, I assume both Meetup and Eventbrite have similar options. But it is always fun to try to build your own system.
+Why not make your own aggregator using the [Meetup](https://www.meetup.com/meetup_api/) and [Eventbrite APIs](https://www.eventbrite.com/platform/api), that will warn you when keywords are in event descriptions or titles? Now, I assume both Meetup and Eventbrite have similar options. But it is always fun to try to build your own system.
 
 You can customize the system to work the way you want, and maybe even allow other people to make their own alerts by making this a website. What’s exciting about this project is that you can practice working with two different APIs. This will allow you to compare and contract what you like and dislike about them. That way, if you’re ever in charge of building an API, you’ll have a better picture of what works and what doesn’t.
 
-Skills:APIs, database, automation, web development, and general programming.
-
-
+**Skills:** APIs, database, automation, web development, and general programming.
 
 ### 3. A 9GAG copy cat
 
@@ -86,9 +76,7 @@ You don’t always need to try to reinvent the wheel when creating your own proj
 
 It’s always fun to try and replicate popular sites. In fact, it is actually a great way to learn because you have to reverse-engineer each feature. Reverse engineering is a great skill, because as a software engineer you will constantly be maintaining other people’s code and you will need to get in their heads.
 
-Skills:Machine learning (for recommendation system), database, automation, web development, and general programming.
-
-
+**Skills:** Machine learning (for recommendation system), database, automation, web development, and general programming.
 
 ### 4. A gift recommendation app
 
@@ -100,9 +88,7 @@ Also, another great part about this project is you can use Amazon’s API for af
 
 This project also has an opportunity to try to create a basic machine learning model. You can create a quiz of sorts that tries to figure out what the best gift is and then, based on if people click the gift or not, can drive the model to learn based on the response rate.
 
-Skills:APIs, database, general programming, and app development.
-
-
+**Skills:** APIs, database, general programming, and app development.
 
 ### 5. A site for bartering and trading
 
@@ -112,9 +98,7 @@ How will people post, where will people find recently posted items and how will 
 
 The idea doesn’t have to be 100% practical for real life — it needs to be practical in the sense of improving your skill set as a programmer.
 
-Skills:Database, web development, general programming, and app development (if you choose to make it an app).
-
-
+**Skills:** Database, web development, general programming, and app development (if you choose to make it an app).
 
 ### 6. Invoice and contract management system
 
@@ -124,29 +108,23 @@ This makes this a very good project, even if you simplify it to some of its core
 
 Again, we wouldn’t overcomplicate this. Take a basic feature, like inputting the terms of a contract, and develop this part first. Then you can add other features like invoice tracking, contract analytics and forecasting.
 
-Skills:Process management, database, web development, and general programming.
-
-
+**Skills:** Process management, database, web development, and general programming.
 
 ### 7. Task management system
 
-Task boards like[KanbanFlow](https://kanbanflow.com/)are built with several modular features that make it a great project to play around with. It will take a little work to get started, as you will need to set up a UI that is robust and dynamic as well. In fact, this project would be more of a two person job. One person to work on the front end and another person to work on the back end.
+Task boards like [KanbanFlow](https://kanbanflow.com/) are built with several modular features that make it a great project to play around with. It will take a little work to get started, as you will need to set up a UI that is robust and dynamic as well. In fact, this project would be more of a two person job. One person to work on the front end and another person to work on the back end.
 
 Don’t let that discourage you! This is actually a chance for you to work on your communication and team work skills. You will need to talk through designs to make sure you both fully understand it, and you know where your modules will be connecting.
 
 This is always more challenging than it seems.
 
-Skills:Communication, front end, database, web development, and general programming.
-
-
+**Skills:** Communication, front end, database, web development, and general programming.
 
 ### 8. A job board
 
 Any project that forces you to allow users to input as varioustypesof users adds an interesting design aspect. How will you ensure that the way employers experience the site meets their needs vs. prospecting job searchers? Like most of the other projects, you don’t need to focus on all of it at once. Start out by trying to create the ability to create a job posting first. Then you can go and focus on the job searchers and how they respond.
 
-Skills:Database, web development, and general programming.
-
-
+**Skills:** Database, web development, and general programming.
 
 ### 9. A website that forecasts profits based on standardized data sets
 
@@ -156,9 +134,7 @@ What is great about the standardization of any data set, is that it makes it eas
 
 For this project you will probably have to spend a lot of time learning about how to make sure you keep your data secure. Of course, we recommend first trying to build the modules that focus on uptaking and standardizing the data and displaying it, before you go too deep into security. That’s a rabbit hole you may never escape!
 
-Skills:Forecasting, business logic, database, web development, and general programming
-
-
+**Skills:** Forecasting, business logic, database, web development, and general programming
 
 ### 10. Snake
 
@@ -168,7 +144,7 @@ This will require you to figure out how to develop a game online. This [neon Sna
 
 This would be a chance to play around and have fun. This project won’t be as technical from the stand point of having lots of users that sign up and use your site. However, it is a good challenge to figure out how to make a game run online.
 
-Skills:Web development, general programming, and UI
+**Skills:** Web development, general programming, and UI
 
 ## Managing your time
 
