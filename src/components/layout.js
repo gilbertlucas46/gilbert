@@ -27,6 +27,7 @@ const MainLayout = styled.main`
   max-width: 100%;
   padding-top: 2rem;
   height: 100vh;
+  overflow-x: hidden;
   a {
     color: #ed2654;
     text-decoration: none;
