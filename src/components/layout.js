@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Spring } from "react-spring/renderprops";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
@@ -108,13 +107,13 @@ const Layout = ({ children, location }) => (
           socialChannels={data.site.siteMetadata.socialChannels}
         />
         <LoginContainer>
-          <Link
-            to="/"
+          <a
+            href="/admin/"
             alt="Admin dashboard"
             aria-label="Opens admin dashboard"
           >
             <Login/>
-          </Link>
+          </a>
         </LoginContainer>
         <MainLayout>
           <SEO

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby';
 import Layout from './layout';
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 
 // Static Query
 // Used anywhere, doesn't accept variable, can't use context
