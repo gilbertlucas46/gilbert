@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import Scrable from '../components/utils/scrable'
 import Button from '../components/utils/button'
 
-import Logo from '../components/utils/logo'
+import { Logo } from '../components/utils/logo'
 
 const HomeWrapper = styled.div`
   height: 95vh;
