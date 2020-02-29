@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/gilbert-logo.svg";
+import Logo from "../images/gilbert-logo.svg";
 import "./utils/gilbert-fonts.css";
 
 const HeaderWrapper = styled.div`
@@ -35,18 +35,13 @@ const HeaderContent = styled.div`
   align-items: center;
   height: 100vh;
   .logo {
-    background: #080808;
-    height: 107px;
-    display: flex; /* establish flex container */
-    flex-direction: column; /* make main-axis vertical */
-    justify-content: center; /* align items vertically, in this case */
-    align-items: center;
     position: absolute;
-    top: 0;
+    top: 1rem;
     width: 100%;
-    img {
-      margin-bottom: 0;
-      max-width: 42px;
+    svg {
+      width: 80%;
+      margin: auto;
+      display:block;
     }
   }
   .mainNav {
@@ -173,7 +168,7 @@ const Header = ({ siteTitle, menuLinks, socialChannels }) => (
             textDecoration: `none`
           }}
         >
-          <img style={{ width: "100px" }} src={logo} alt="Gilbert Logo" />
+          <Logo/>
         </Link>
       </div>
       <div className="mainNav">
