@@ -1,12 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
-import { StaticQuery, graphql,Link } from "gatsby"
-import Layout from '../components/layout'
-import Scrable from '../components/utils/scrable'
-import Button from '../components/utils/button'
+import React from 'react';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
+import { StaticQuery, graphql,Link } from "gatsby";
+import Layout from '../components/layout';
+import Scrable from '../components/utils/scrable';
+import Button from '../components/utils/button';
 
-import { Logo } from '../components/utils/logo'
+import { Logo } from '../components/utils/logo';
+import Login from "../images/login.svg";
 
 const HomeWrapper = styled.div`
   height: 95vh;
@@ -39,6 +40,18 @@ const HomeWrapper = styled.div`
   }
 `;
 
+const LoginContainer = styled.div`
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index:999;
+  svg {
+    fill: #575454;
+    &:hover {
+      fill: #ed2654;
+    }
+  }
+`;
 
 const IndexPage = ({location}) => (
   <Layout location={location}>
@@ -68,6 +81,15 @@ const IndexPage = ({location}) => (
             <Button> <Link aria-label="links to gilberts contact form" alt="links to gilberts contact form" to={`/contact`}>Contact me</Link></Button>
           </div>
           <Logo/>
+          <LoginContainer>
+            <a
+              href="/admin/"
+              alt="Admin dashboard"
+              aria-label="Opens admin dashboard"
+            >
+              <Login/>
+            </a>
+          </LoginContainer>
         </HomeWrapper>
       </>
     )}

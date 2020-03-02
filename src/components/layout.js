@@ -6,22 +6,8 @@ import styled from "styled-components";
 import Header from "./header";
 import SEO from "../components/utils/seo/seo";
 
-import Login from "../images/login.svg";
 import "./utils/layout.css";
 import "./utils/miriam-font.css";
-
-const LoginContainer = styled.div`
-  position: fixed;
-  right: 1rem;
-  top: 1rem;
-  z-index:999;
-  svg {
-    fill: #575454;
-    &:hover {
-      fill: #ed2654;
-    }
-  }
-`;
 
 const MainLayout = styled.main`
   max-width: 100%;
@@ -107,15 +93,6 @@ const Layout = ({ children, location }) => (
           menuLinks={data.site.siteMetadata.menuLinks}
           socialChannels={data.site.siteMetadata.socialChannels}
         />
-        <LoginContainer>
-          <a
-            href="/admin/"
-            alt="Admin dashboard"
-            aria-label="Opens admin dashboard"
-          >
-            <Login/>
-          </a>
-        </LoginContainer>
         <MainLayout>
           <SEO
             title={data.site.siteMetadata.title}
