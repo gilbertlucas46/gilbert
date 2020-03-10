@@ -18,15 +18,11 @@ By setting the bar too high — like aiming to create a successful, popular, and
 
 In this post, I want to help fight “side project paralysis” by offering side project ideas that any software developer can start in one weekend.
 
-
-
 ## **4 characteristics to bake into your personal projects to maximize success** 💪
-
-
 
 > **WARNING:** It’s easy to overcomplicate these things. The goal is to present something finished and deployed. If you’re trying to learn a new language, or you want to learn some new aspect of it, by all means work on a project. But don’t make it something so vital that you can’t afford to mess up. You will struggle and maybe wind up hating the language. The best thing to do is something small and whimsical.
 
-### 1. Small
+### 1. Small.
 
 Grand adventures start with a bold, but tiny, first step. Hello, World! Is a good first program for a reason. There’s so much to learn at first. The build tool, the command to run it, input + output, so much! At the beginning, getting all of that settled is hard enough without dealing with bugs in your program.
 
