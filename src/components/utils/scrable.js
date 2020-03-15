@@ -22,7 +22,7 @@ export default class Scrable extends Component {
     };
 
     next();
-    console.log(el);
+    // console.log(el);
   }
   render() {
     return (
@@ -38,7 +38,7 @@ class TextScramble {
     this.el = el;
     this.chars = "!<>-_\\/[]{}—=+*^?#________";
     this.update = this.update.bind(this);
-    console.log(this);
+    // console.log(this);
   }
   setText(newText) {
     const oldText = this.el.innerText;

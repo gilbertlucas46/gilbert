@@ -90,10 +90,11 @@ const HeaderContent = styled.div`
           text-align: center;
           text-decoration: none;
           color: #575454;
+          width: 32px;
+          height: 38px;
+          line-height: 38px;
           .dev {
             font-size: 1.6rem;
-            width: 32px;
-            height: 32px;
             display: block;
 
             @media (min-height: 568px) and (max-height: 700px) {
