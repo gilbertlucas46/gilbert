@@ -5,4 +5,4 @@ categories: mywork
 nature: Web Development
 type: true
 ---
-Shows Statistics of the Corona Virus Cases World Wide
+[COVID19](https://gilbert.codes/covid19/): Shows Statistics of the Corona Virus Cases World Wide
