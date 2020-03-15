@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-
 const PROJECTS_QUERY = graphql`
   query projects {
   allMarkdownRemark(filter: {frontmatter: {categories: {eq: "mywork"}}},sort: {
@@ -15,8 +14,8 @@ const PROJECTS_QUERY = graphql`
                     frontmatter {
                         title
                         nature
-                         thumbnail {
-                           childImageSharp {
+                        thumbnail {
+                          childImageSharp {
                             fluid(maxWidth: 700) {
                               ...GatsbyImageSharpFluid_withWebp_tracedSVG
                             }
@@ -182,7 +181,6 @@ export default class Projects extends Component {
                   __html: edge.node.html
                 }}/>
                 </div>
-               
               </figcaption>			
             </figure>
             </div>
