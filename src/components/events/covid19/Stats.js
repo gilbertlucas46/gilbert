@@ -4,14 +4,20 @@ import useStats from '../../utils/events/covid19/useStats';
 
 const StatGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  display: grid;
+  @media (min-width:1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width:768px) and (max-width:1199px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 const StatBlock = styled.div`
   background: #f2f2f2;
   font-size: 2rem;
   padding: 2rem;
-  border-radius: 2rem;
+  border-radius: .5rem;
   display: grid;
   align-items: center;
   justify-items: center;

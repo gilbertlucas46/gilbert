@@ -21,8 +21,11 @@ const MainLayout = styled.main`
       text-decoration: underline;
     }
   }
-  h1 {
+  h1,h2 {
     color: #ed2654;
+    font-weight: normal;
+  }
+  h1 {
     font-weight: normal;
     letter-spacing: 2px;
     font-size: 3.5rem;
@@ -40,7 +43,6 @@ const MainLayout = styled.main`
   h2 {
     font-size: 1.5rem;
     letter-spacing: 2px;
-    font-weight: normal;
     margin: 2rem 0;
   }
   .contents {
