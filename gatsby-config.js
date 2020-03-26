@@ -99,6 +99,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/metadata`,
+        name: 'metadatass',
+      }
+    },
+    
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/posts`,
         name: 'posts',
       }
