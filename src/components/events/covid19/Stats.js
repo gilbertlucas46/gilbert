@@ -26,7 +26,7 @@ const StatBlock = styled.div`
 
 const Stats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
-  console.log(stats, loading, error);
+  // console.log(stats, loading, error);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error...</p>;
   return (

@@ -3,7 +3,6 @@ import Layout from  '../components/layout';
 import SEO from "../components/utils/seo/seo"
 
 import { createGlobalStyle } from 'styled-components';
-import useStats from '../components/utils/events/covid19/useStats';
 import {Stats} from '../components/events/covid19/Stats';
 import CountrySelector from '../components/events/covid19/CountrySelector';
 
