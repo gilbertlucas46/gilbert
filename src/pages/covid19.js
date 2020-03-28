@@ -12,9 +12,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Covid19 = () => {
+const Covid19 = ({location}) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <GlobalStyle />
       <SEO title="COVID19" />
       <Stats url="https://covid19.mathdro.id/api"></Stats>

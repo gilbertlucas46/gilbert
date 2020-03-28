@@ -184,7 +184,7 @@ const Profile = ({location}) => (
             <h4>Development Stack</h4>
             <div className="specs">
             {DevStack.map((stack,index) => (
-                <span>
+                <span key={index}>
                 {(index ? ', ' : '')}
                 <a rel="noopener noreferrer" className="link" target="_blank" href={stack.link}>{stack.name}
                 </a> 
@@ -194,7 +194,7 @@ const Profile = ({location}) => (
             <h4>Design tools</h4>
             <div className="specs">
             {DesignStack.map((stack,index) => (
-                <span>
+                <span key={index}>
                     {(index ? ', ' : '')}
                     <a rel="noopener noreferrer" className="link" target="_blank" href={stack.link}>{stack.name}</a>
                 </span>  

@@ -1,14 +1,18 @@
 const url = 'https://gilbert.codes';
+const title = 'Gilbert Lucas  · FullStack Developer and UI/UX Javascript Specialist';
+const image = '/src/images/gilbert-lucas.png';
 
 module.exports = {
   siteMetadata: {
-    title: `Gilbert Lucas  · FullStack Developer and UI/UX Javascript Specialist`,
+    title,
+    defaultTitle: title,
     titleTemplate: '%s · Gilbert Lucas',
     description: `My name is Gilbert Lucas. I'm a 28-year-old web developer from Philippines with an interest in pretty much everything web! I mainly write JavaScript at present, I also do web design, but I'm up for learning pretty much anything!`,
     author: `Gilbert Lucas`,
     url: url,
     siteUrl: url,
-    image: `/src/images/gilbert-lucas.png`,
+    image,
+    defaultImage: image,
     owner: 'Gilbertlucas',
     twitterUsername: '@gilbertlucas14',
     facebookAppID: '',
@@ -100,7 +104,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/metadata`,
-        name: 'metadatass',
+        name: 'metadata',
       }
     },
     
@@ -157,6 +161,12 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
             options: {
               name: "posts" // Must match the source name ^
+            }
+          },
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: "metadata" // Must match the source name ^
             }
           },
           {

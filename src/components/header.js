@@ -90,7 +90,7 @@ const HeaderContent = styled.div`
           text-align: center;
           text-decoration: none;
           color: #575454;
-          width: 32px;
+          width: 38px;
           height: 38px;
           line-height: 38px;
           .dev {

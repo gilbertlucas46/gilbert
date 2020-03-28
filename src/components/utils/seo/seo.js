@@ -22,13 +22,13 @@ const SEO = ({ title, description, meta, keywords, lang, image, pathname, articl
         },
       },
     }) => {
+      // const img = image[0] === null ? defaultImage : image[0];
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
       }
-
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}
