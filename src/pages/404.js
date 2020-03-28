@@ -13,8 +13,8 @@ const Error404 = styled.div`
   align-items: left; 
 `;
 
-const NotFoundPage = () => (
-  <Layout>
+const NotFoundPage = ({location}) => (
+  <Layout location={location}>
     <Error404>
       <SEO title="404: Not found" />
       <h1>NOT FOUND</h1>
