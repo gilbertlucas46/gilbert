@@ -45,6 +45,7 @@ const Stats = ({ url }) => {
           <span>{stats.recovered.value}</span>
         </StatBlock>
       </StatGrid>
+      {console.log(stats)}
     </>
   )
 }

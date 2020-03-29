@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
 const CovidContainer = styled.div`
   @media (min-width: 992px) {
-    padding-right: 5%;
+    padding-right: 3%;
   }
 `;
 
@@ -29,7 +29,7 @@ const Covid19 = ({location}) => {
       <SEO
         title={`Coronavirus (Live update)`}
         description="Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, and death toll by country due to the COVID 19 coronavirus from Wuhan, China. Coronavirus counter with new cases, updates"
-        image="https://covid19.mathdro.id/api/og"
+        image="http://www.thailandmedical.news/uploads/editor/files/bangkok-coronavirus-thailand.jpg"
         pathname='/covid19'
         keywords={[
           `corona virus`,
