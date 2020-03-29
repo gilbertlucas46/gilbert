@@ -29,7 +29,7 @@ const Covid19 = ({location}) => {
       <SEO
         title={`Coronavirus (Live update)`}
         description="Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, and death toll by country due to the COVID 19 coronavirus from Wuhan, China. Coronavirus counter with new cases, updates"
-        image="http://www.thailandmedical.news/uploads/editor/files/bangkok-coronavirus-thailand.jpg"
+        image="https://covid19.mathdro.id/api/og"
         pathname='/covid19'
         keywords={[
           `corona virus`,
