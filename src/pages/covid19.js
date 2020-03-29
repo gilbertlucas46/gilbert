@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from  '../components/layout';
-import SEO from "../components/utils/seo/seo"
-
+import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
+import SEO from '../components/utils/seo/seo';
 import {Stats} from '../components/events/covid19/Stats';
 import CountrySelector from '../components/events/covid19/CountrySelector';
 
@@ -12,14 +12,35 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const CovidContainer = styled.div`
+  @media (min-width: 992px) {
+    padding-right: 5%;
+  }
+`;
+
 const Covid19 = ({location}) => {
   return (
-    <Layout location={location}>
-      <GlobalStyle />
-      <SEO title="COVID19" />
-      <Stats url="https://covid19.mathdro.id/api"></Stats>
-      <CountrySelector></CountrySelector>
-    </Layout>
+    <CovidContainer>
+      <Layout location={location}>
+        <GlobalStyle />
+        <Stats url="https://covid19.mathdro.id/api"></Stats>
+        <CountrySelector></CountrySelector>
+      </Layout>
+      <SEO
+        title={`Coronavirus (Live update)`}
+        description="Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, and death toll by country due to the COVID 19 coronavirus from Wuhan, China. Coronavirus counter with new cases, updates"
+        image="https://covid19.mathdro.id/api/og"
+        pathname='/covid19'
+        keywords={[
+          `corona virus`,
+          `Wuhan China`,
+          `Covid19`,
+          `novel coronavirus COVID-19`,
+          `Wuhan Coronavirus`,
+          `COVID-19 CORONAVIRUS PANDEMIC`,
+        ]}
+      />
+    </CovidContainer>
   )
 }
 

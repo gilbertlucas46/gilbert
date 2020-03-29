@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Spring } from "react-spring/renderprops";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import Header from "./header";
@@ -213,11 +213,11 @@ const Layout = ({ children, location }) => {
 }
 
 
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired
-// };
-// Layout.defaultProps = {
-//   location: {}
-// };
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
+Layout.defaultProps = {
+  location: {}
+};
 
 export default Layout;
