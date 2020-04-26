@@ -141,10 +141,6 @@ const DevStack = [
         link: 'https://www.netlify.com'
     },
     {
-        name: `NetlifyCMS`,
-        link: 'https://www.netlifycms.org'
-    },
-    {
         name: `Apollo`,
         link: 'https://www.apollographql.com/docs/apollo-server/'
     },
@@ -155,7 +151,15 @@ const DevStack = [
     {
         name: `Mongodb`,
         link: 'https://www.mongodb.com'
-    }
+    },
+    {
+        name: `NetlifyCMS`,
+        link: 'https://www.netlifycms.org'
+    },
+    {
+        name: `Strapi`,
+        link: 'https://strapi.io'
+    },
 ];
 const DesignStack =[
     {
