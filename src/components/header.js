@@ -157,7 +157,6 @@ const HeaderContent = styled.div`
 `;
 
 const Header = ({ siteTitle, menuLinks, socialChannels }) => {
-  console.log("Current Path:", window.location.pathname);
   return (
     <HeaderWrapper>
       <HeaderContent>
