@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import NavLogo from "../images/gilbert-logo.svg";
 import "./utils/gilbert-fonts.css";
+import { useLocation } from 'react-router-dom';
 
 const HeaderWrapper = styled.div`
   position: fixed;
@@ -157,7 +158,6 @@ const HeaderContent = styled.div`
 `;
 
 const Header = ({ siteTitle, menuLinks, socialChannels }) => {
-
   return (
     <HeaderWrapper>
       <HeaderContent>
@@ -181,7 +181,7 @@ const Header = ({ siteTitle, menuLinks, socialChannels }) => {
                 <li key={link.name} style={{ listStyleType: "none" }}>
                   <Link
                     to={link.link}
-                    activeClassName="active"
+                    className={location.pathname === link.link ? "active" : ""}
                     aria-label={`links to ${link.name}`}
                     alt={link.name}
                   >
