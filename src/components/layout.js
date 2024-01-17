@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import Header from "./header";
 import SEO from "../components/utils/seo/seo";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import "./utils/layout.css";
 import "./utils/miriam-font.css";
@@ -99,6 +100,7 @@ const SEO_QUERY = graphql`
 
 const Layout = ({ children, location }) => {
   return (
+    <Router>
     <StaticQuery
       query={SEO_QUERY}
       render={({ allMarkdownRemark }) => (
@@ -209,6 +211,7 @@ const Layout = ({ children, location }) => {
         </>
       )}
     />
+    </Router>
   )
 }
 
