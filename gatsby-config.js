@@ -1,6 +1,10 @@
 const url = 'https://gilbert.codes';
 const title = 'Gilbert Lucas  · FullStack Developer and UI/UX Javascript Specialist';
-const image = `${url}/src/images/gilbert-lucas.png`;
+const image = `${url}/static/4b83faf6a00cf68751dd65a0f4d13966/87516/gilbert-lucas.png`;
+
+
+
+console.log("================", image)
 
 module.exports = {
   siteMetadata: {
