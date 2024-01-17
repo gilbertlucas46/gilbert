@@ -32,6 +32,7 @@ const AboutContent = styled.div`
         line-height:1.7rem;
         a.link {
             color: #575454;
+            font-size: 16px;
             &:hover {
                 text-decoration:none;
                 color: #ED2654;
@@ -111,7 +112,43 @@ const Divider = styled.div`
     margin-bottom:1.45rem;
 `;
 
-const DevStack = [
+const BackendStack = [
+    {
+        name: `Python`,
+        link: 'https://www.python.org'
+    },
+    {
+        name: `FastAPI`,
+        link: 'https://fastapi.tiangolo.com'
+    },
+    {
+        name: `SqlAlchemy`,
+        link: 'https://www.sqlalchemy.org'
+    },
+    {
+        name: `GraphQL`,
+        link: 'https://graphql.org'
+    },
+    {
+        name: `TypeORM`,
+        link: 'https://typeorm.io'
+    },
+    {
+        name: `NestJS`,
+        link: 'https://nestjs.com'
+    },
+    {
+        name: `JWT (JSON Web Tokens)`,
+        link: 'https://jwt.io'
+    },
+    {
+        name: `PostgreSQL`,
+        link: 'https://www.postgresql.org'
+    },
+    // Add more backend tools as needed
+];
+
+const FrontendStack = [
     {
         name: `ReactJS`,
         link: 'https://reactjs.org'
@@ -121,7 +158,7 @@ const DevStack = [
         link: 'https://www.gatsbyjs.org'
     },
     {
-        name: `NextJS`,
+        name: `NextJS, NextJS 13+`,
         link: 'https://nextjs.org'
     },
     {
@@ -137,73 +174,138 @@ const DevStack = [
         link: 'https://www.styled-components.com'
     },
     {
-        name: `Netlify`,
-        link: 'https://www.netlify.com'
+        name: `Material UI`,
+        link: 'https://material-ui.com'
     },
     {
-        name: `Apollo`,
-        link: 'https://www.apollographql.com/docs/apollo-server/'
+        name: `useForm (React Hook Form)`,
+        link: 'https://react-hook-form.com'
     },
     {
-        name: `ExpressJS`,
-        link: 'https://expressjs.com'
+        name: `React Testing Library`,
+        link: 'https://testing-library.com/docs/react-testing-library/intro/'
     },
     {
-        name: `Mongodb`,
-        link: 'https://www.mongodb.com'
+        name: `ChartsJS`,
+        link: 'https://www.chartjs.org'
     },
     {
-        name: `NetlifyCMS`,
-        link: 'https://www.netlifycms.org'
+        name: `D3JS`,
+        link: 'https://d3js.org'
     },
     {
-        name: `Strapi`,
-        link: 'https://strapi.io'
+        name: `StripeJS`,
+        link: 'https://stripe.com/docs/js'
     },
+    {
+        name: `Google Places API`,
+        link: 'https://developers.google.com/maps/documentation/javascript/places'
+    },
+    // Add more frontend tools as needed
 ];
-const DesignStack =[
+
+const MachineLearningTools = [
     {
-        name: `Adobe XD`,
-        link: 'https://www.adobe.com/products/xd.html'
+        name: `TensorFlow`,
+        link: 'https://www.tensorflow.org'
     },
     {
-        name: `Figma`,
-        link: 'https://www.figma.com'
+        name: `PyTorch`,
+        link: 'https://pytorch.org'
     },
     {
-        name: `Adobe Illustrator`,
-        link: 'https://www.adobe.com/products/illustrator.html'
+        name: `Scikit-Learn`,
+        link: 'https://scikit-learn.org'
     },
     {
-        name: `Adobe Photoshop`,
-        link: 'https://www.adobe.com/products/photoshop.html'
+        name: `Keras`,
+        link: 'https://keras.io'
     },
-]
+    {
+        name: `XGBoost`,
+        link: 'https://xgboost.ai'
+    },
+    {
+        name: `OpenCV`,
+        link: 'https://opencv.org'
+    },
+    // Add more machine learning tools as needed
+];
+
+const DataScienceTools = [
+    {
+        name: `Jupyter`,
+        link: 'https://jupyter.org'
+    },
+    {
+        name: `Pandas`,
+        link: 'https://pandas.pydata.org'
+    },
+    {
+        name: `NumPy`,
+        link: 'https://numpy.org'
+    },
+    {
+        name: `Matplotlib`,
+        link: 'https://matplotlib.org'
+    },
+    {
+        name: `Seaborn`,
+        link: 'https://seaborn.pydata.org'
+    },
+    {
+        name: `SciPy`,
+        link: 'https://www.scipy.org'
+    },
+    // Add more data science tools as needed
+];
+
 const Profile = ({location}) => (
     <Layout location={location}>
         <AboutContent>
             <h1>About Me</h1>
-            <p>I am a Full Stack Web Developer and UI/UX Javascript specialist based in Philippines.</p>
+            <p>Full Stack Web Developer and UI/UX javascript specialist based in the Philippines. With a solid 12 Year experience in web development and UI/UX design. Experienced handling all stages of and following all software guidelines. Troubleshoots glitches, improves on existing software and tests products in real-life situations.</p>
             <Divider/>
-            <h4>Development Stack</h4>
+            <h4>Backend Stack</h4>
             <div className="specs">
-            {DevStack.map((stack,index) => (
-                <span key={index}>
-                {(index ? ', ' : '')}
-                <a rel="noopener noreferrer" className="link" target="_blank" href={stack.link}>{stack.name}
-                </a> 
-                </span>
-            ))}
+                {BackendStack.map((stack, index) => (
+                    <span key={index}>
+                        {(index ? ', ' : '')}
+                        <a rel="noopener noreferrer" className="link" target="_blank" href={stack.link}>{stack.name}</a>
+                    </span>
+                ))}
             </div>
-            <h4>Design tools</h4>
+
+            <h4>Frontend Stack</h4>
             <div className="specs">
-            {DesignStack.map((stack,index) => (
-                <span key={index}>
-                    {(index ? ', ' : '')}
-                    <a rel="noopener noreferrer" className="link" target="_blank" href={stack.link}>{stack.name}</a>
-                </span>  
-            ))}
+                {FrontendStack.map((stack, index) => (
+                    <span key={index}>
+                        {(index ? ', ' : '')}
+                        <a rel="noopener noreferrer" className="link" target="_blank" href={stack.link}>{stack.name}</a>
+                    </span>
+                ))}
             </div>
+
+            <h4>Machine Learning Tools</h4>
+            <div className="specs">
+                {MachineLearningTools.map((tool, index) => (
+                    <span key={index}>
+                        {(index ? ', ' : '')}
+                        <a rel="noopener noreferrer" className="link" target="_blank" href={tool.link}>{tool.name}</a>
+                    </span>
+                ))}
+            </div>
+
+            <h4>Data Science Tools</h4>
+            <div className="specs">
+                {DataScienceTools.map((tool, index) => (
+                    <span key={index}>
+                        {(index ? ', ' : '')}
+                        <a rel="noopener noreferrer" className="link" target="_blank" href={tool.link}>{tool.name}</a>
+                    </span>
+                ))}
+            </div>
+
             <Button>
                 <a rel="noopener noreferrer"  target="_blank" href="https://docs.google.com/document/d/1Vwn_rOpEjFRNc2iovF_C7cIz4gJuuyvG-oYxxUS-IKY/edit?usp=sharing"> Download CV</a>
             </Button>
@@ -211,4 +313,5 @@ const Profile = ({location}) => (
         </AboutContent>
     </Layout>
 );
-export default Profile
+
+export default Profile;
