@@ -307,7 +307,7 @@ const Profile = ({location}) => (
             </div>
 
             <Button>
-                <a rel="noopener noreferrer"  target="_blank" href="https://docs.google.com/document/d/1Vwn_rOpEjFRNc2iovF_C7cIz4gJuuyvG-oYxxUS-IKY/edit?usp=sharing"> Download CV</a>
+                <a rel="noopener noreferrer"  target="_blank" href="https://docs.google.com/document/d/1P4BzCnztg8IJjb7e7laq5jRzJlAGhpjND_GDX0X1KTk/edit?usp=sharing"> Download CV</a>
             </Button>
             <Logo/>
         </AboutContent>
