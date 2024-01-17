@@ -1,17 +1,19 @@
 const url = 'https://gilbert.codes';
-const title = 'Gilbert Lucas  · FullStack Developer and UI/UX Javascript Specialist';
+const title = '12-year Full Stack Developer with expertise in web development, UI/UX design, and machine learning. Eager to contribute unique skills to your team.';
 const image = `${url}/static/4b83faf6a00cf68751dd65a0f4d13966/87516/gilbert-lucas.png`;
 
-
-
-console.log("================", image)
 
 module.exports = {
   siteMetadata: {
     title,
     defaultTitle: title,
     titleTemplate: '%s · Gilbert Lucas',
-    description: `My name is Gilbert Lucas. I'm a 28-year-old web developer from Philippines with an interest in pretty much everything web! I mainly write JavaScript at present, I also do web design, but I'm up for learning pretty much anything!`,
+    description: `My name is Gilbert Lucas. I'm a 33-year-old Full Stack Developer with a robust 12-year background in web development, UI/UX design, and a comprehensive understanding of machine learning and data science.
+
+    Throughout my career, I have successfully navigated the entire development lifecycle, adhering to best practices and guidelines. My expertise includes troubleshooting, enhancing existing software, and thorough testing of products in real-world scenarios. What sets me apart is my proficiency not only in full-stack development but also in leveraging machine learning and data science to enhance project outcomes. 
+
+    While my professional experiences are all in my CV, I also want to say that my persistence and accountability in finishing tasks and projects entrusted to me are the main reasons why my past companies and clients enjoy working with me.
+    `,
     author: `Gilbert Lucas`,
     url: url,
     siteUrl: url,
