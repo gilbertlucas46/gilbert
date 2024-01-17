@@ -6,12 +6,15 @@ import Button from '../components/utils/button'
 
 const AboutContent = styled.div`
     max-width:900px;
-    height: 95vh;
+    height: 114vh;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main-axis vertical */
     justify-content: center; /* align items vertically, in this case */
     @media (min-width:1440px) {
         width:90%;
+    }
+    @media (min-width: 768px) {
+        height: 95vh;
     }
     p {
         font-size: 1.2rem;

@@ -7,12 +7,15 @@ import ServicesComponent from '../components/services'
 
 const ServicesContent = styled.div`
     max-width:772px;
-    height: 95vh;
+    height: 100vh;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main-axis vertical */
     justify-content: center; /* align items vertically, in this case */
     @media (min-width:1440px) {
         width:88%;
+    }
+    @media (min-width: 768px) {
+        height: 95vh;
     }
     p {
         font-size: 1.2rem;

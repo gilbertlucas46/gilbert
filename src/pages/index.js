@@ -10,11 +10,14 @@ import { Logo } from '../components/utils/logo';
 import Login from "../images/login.svg";
 
 const HomeWrapper = styled.div`
-  height: 95vh;
+  height: 100vh;
   display: flex; /* establish flex container */
   flex-direction: column; /* make main-axis vertical */
   justify-content: center; /* align items vertically, in this case */
   align-items: left; 
+  @media (min-width: 768px) {
+    height: 95vh;
+  }
   .fixedBG {
     z-index: -1;
     left: 70px;
