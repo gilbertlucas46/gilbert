@@ -58,53 +58,32 @@ collections:
     folder: "src/metadata"
     create: true
     fields:
-      - {
-          label: "Metadata's",
-          name: metadata,
-          required: true,
-          widget: list,
-          fields:
-            [
-              { label: "Meta Title", name: "metatitle", widget: "string" },
-              { label: "Title Template", name: "titleTemplate", widget: "hidden", default: "%s · Gilbert Lucas" },
-              { label: "About Description", name: metadesc, widget: 'markdown' },
-              { label: "Author", name: "author", widget: "hidden", default: "Gilbert lucas" },
-              { label: "url", name: "url", widget: "hidden", default: "https://gilbert.codes" },
-              { label: "twitterUsername", name: "url", widget: "hidden", default: "@gilbertlucas14" },
-              {
-                label: Image,
-                name: image,
-                required: false,
-                hint: "Image for the page",
-                widget: image,
-              },
-              { label: "Owner", name: "owner", widget: "hidden", default: "Gilbertlucas" },
-              { label: "Page name", name: "pagetitle", widget: "string" },
-              { label: "twitterUsername", name: "url", widget: "hidden", default: "@gilbertlucas14" },
-              { label: "facebookAppID", name: "url", widget: "hidden", default: " " }
-            ]
-          }
-      - {
-          label: Menu Links,
-          name: menuLinks,
-          required: true,
-          widget: list,
-          fields:
-            [
-              { label: "Page Name", name: "name", widget: "string" },
-              { label: "Link to", name: link, widget: 'string' }
-            ]
-          }
-      - {
-          label: Social Channels,
-          name: socialChannels,
-          required: true,
-          widget: list,
-          fields:
-            [
-              { label: "Social Name", name: "name", widget: "string" },
-              { label: "Link to", name: link, widget: 'string' }
-            ]
-          }
-
-
+      - label: "Metadata's"
+        name: metadata
+        required: true
+        widget: list
+        fields:
+          - { label: "Meta Title", name: "metatitle", widget: "string" }
+          - { label: "Title Template", name: "titleTemplate", widget: "hidden", default: "%s · Gilbert Lucas" }
+          - { label: "About Description", name: metadesc, widget: 'markdown' }
+          - { label: "Author", name: "author", widget: "hidden", default: "Gilbert lucas" }
+          - { label: "URL", name: "url", widget: "hidden", default: "https://gilbert.codes" }
+          - { label: "Twitter Username", name: "twitterUsername", widget: "hidden", default: "@gilbertlucas14" }
+          - { label: "Image", name: "image", required: false, hint: "Image for the page", widget: image }
+          - { label: "Owner", name: "owner", widget: "hidden", default: "Gilbertlucas" }
+          - { label: "Page name", name: "pagetitle", widget: "string" }
+          - { label: "Facebook App ID", name: "facebookAppID", widget: "hidden", default: " " }
+      - label: "Menu Links"
+        name: menuLinks
+        required: true
+        widget: list
+        fields:
+          - { label: "Page Name", name: "name", widget: "string" }
+          - { label: "Link to", name: "link", widget: 'string' }
+      - label: "Social Channels"
+        name: socialChannels
+        required: true
+        widget: list
+        fields:
+          - { label: "Social Name", name: "name", widget: "string" }
+          - { label: "Link to", name: "link", widget: 'string' }
