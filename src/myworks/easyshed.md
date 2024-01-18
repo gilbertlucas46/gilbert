@@ -2,7 +2,7 @@
 title: Easyshed
 thumbnail: /img/easyshed.jpg
 categories: mywork
-nature: Web Design & Frontend
+nature: Web Design & Frontend & Backend
 type: true
 ---
 
