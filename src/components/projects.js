@@ -44,6 +44,11 @@ const ProjectsList = styled.div`
     text-align: center;
     margin-bottom:0;
     cursor: pointer;
+    max-height: 232px;
+    .gatsby-image-wrapper {
+      display: flex;
+      align-items: center;
+    }
     img {
       margin-bottom:0;
     }
@@ -100,11 +105,13 @@ const ProjectsList = styled.div`
           font-size:1rem;
           font-weight:normal;
           margin-bottom:15px;
+          text-shadow: 2px 2px 20px black;
         }
         h2 {
-          font-size:2rem;
+          font-size:1.8rem;
           font-family: 'Miriam Libre';
           font-weight: bold;
+          text-shadow: 2px 2px 20px black;
         }
         .info {
           position: absolute;
