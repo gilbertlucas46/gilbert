@@ -4,7 +4,6 @@ import React from "react";
 import styled from "styled-components";
 import NavLogo from "../images/gilbert-logo.svg";
 import "./utils/gilbert-fonts.css";
-import { useLocation } from 'react-router-dom';
 
 const HeaderWrapper = styled.div`
   position: fixed;

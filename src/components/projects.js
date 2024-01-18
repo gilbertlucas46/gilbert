@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 const PROJECTS_QUERY = graphql`
   query projects {
   allMarkdownRemark(filter: {frontmatter: {categories: {eq: "mywork"}}},sort: {
-    order: DESC,
+    order: ASC,
     fields:frontmatter___title
   }) {
             edges {
