@@ -23,13 +23,13 @@ const Covid19 = ({location}) => {
     <CovidContainer>
       <Layout location={location}>
         <GlobalStyle />
-        <Stats url="https://covid19.mathdro.id/api"></Stats>
+        <Stats url="https://disease.sh/v3/covid-19/all"></Stats>
         <CountrySelector></CountrySelector>
       </Layout>
       <SEO
         title={`Coronavirus (Live update)`}
         description="Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, and death toll by country due to the COVID 19 coronavirus from Wuhan, China. Coronavirus counter with new cases, updates"
-        image="https://covid19.mathdro.id/api/og"
+        image="https://disease.sh/v3/covid-19/all"
         pathname='/covid19'
         keywords={[
           `corona virus`,

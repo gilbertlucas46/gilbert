@@ -40,20 +40,20 @@ const Select = styled.div`
 
 export default function CountrySelector() {
   const { stats: countries, loading, error } = useStats(
-    "https://covid19.mathdro.id/api/countries"
+    "https://disease.sh/v3/covid-19/countries"
   );
-  const [selectedCountry, setSelectedCountry] = useState("PHL");
+  const [selectedCountry, setSelectedCountry] = useState("Philippines");
   if (loading) return <p>Loading...</p>;
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error...</p>;
 
   let oldStructure = {
     countries: {},
-    iso3: {}
+    iso3: {},
   };
 
-  for (let country of countries.countries) {
-    oldStructure.countries[country.name] = country.iso2;
+  for (let country of countries) {
+    oldStructure.countries[country.country] = country.iso2;
     oldStructure.iso3[country.iso2] = country.iso3;
   }
 
@@ -62,16 +62,16 @@ export default function CountrySelector() {
       <h2>Currently Showing {selectedCountry}</h2>
       <Select>
         <select
-          onChange={e => {
+          onChange={(e) => {
             setSelectedCountry(e.target.value);
           }}
           value={selectedCountry}
         >
           {Object.entries(oldStructure.countries).map(([country, code]) => (
             <option
-            defaultValue={selectedCountry === oldStructure.iso3[code]}
-            key={country}
-            value={oldStructure.iso3[code]}
+              key={code}
+              value={oldStructure.iso3[code]}
+              selected={selectedCountry === oldStructure.iso3[code]}
             >
               {country}
             </option>
@@ -80,7 +80,7 @@ export default function CountrySelector() {
       </Select>
 
       <Stats
-        url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
+        url={`https://disease.sh/v3/covid-19/countries/${selectedCountry}`}
       ></Stats>
     </div>
   );

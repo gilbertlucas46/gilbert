@@ -24,8 +24,13 @@ const StatBlock = styled.div`
   text-align: center;
 `;
 
+const formatNumberWithCommas = number => {
+  return number.toLocaleString();
+};
+
 const Stats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
+ 
   // console.log(stats, loading, error);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error...</p>;
@@ -34,15 +39,15 @@ const Stats = ({ url }) => {
       <StatGrid>
         <StatBlock>
         <h3>Confirmed:</h3>
-        <span>{stats.confirmed.value}</span>
+        <span>{formatNumberWithCommas(stats.cases)}</span>
         </StatBlock>
         <StatBlock>
           <h3>Deaths:</h3>
-          <span>{stats.deaths.value}</span>
+          <span>{formatNumberWithCommas(stats.deaths)}</span>
         </StatBlock>
         <StatBlock>
           <h3>Recovered:</h3>
-          <span>{stats.recovered.value}</span>
+          <span>{formatNumberWithCommas(stats.recovered)}</span>
         </StatBlock>
       </StatGrid>
       {console.log(stats)}
