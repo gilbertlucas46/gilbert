@@ -2,7 +2,7 @@
 title: Parkhound
 thumbnail: /img/parkhound.jpg
 categories: mywork
-nature: Web Design & Frontend
+nature: Fullstack Web Development
 type: true
 ---
 
