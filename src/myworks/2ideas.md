@@ -1,5 +1,5 @@
 ---
-title: 2ideas
+title: 2ideas.
 thumbnail: /img/2ideas.jpg
 categories: mywork
 nature: Frontend
