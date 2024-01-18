@@ -1,6 +1,6 @@
 ---
 title: That Silk Life
-thumbnail: /img/download.png
+thumbnail: /img/thatsilklife.jpg
 categories: mywork
 nature: FullStack Development
 type: true
