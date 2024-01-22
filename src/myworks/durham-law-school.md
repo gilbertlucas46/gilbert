@@ -5,8 +5,7 @@ categories: mywork
 nature: Frontend
 type: true
 ---
-
-  [Durhamlawsoc.com](https://www.durhamlawsoc.com/) - Durham University Law
+[durham.ac.uk](https://www.durham.ac.uk/) - Durham University Law
   Society is one of the oldest and most popular societies operating in Durham.
   As a society run by students, for students, the overarching objective of the
   society is to facilitate access to information regarding various issues in the
