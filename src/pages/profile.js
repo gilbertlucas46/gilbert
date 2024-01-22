@@ -221,8 +221,8 @@ const MachineLearningTools = [
         link: 'https://scikit-learn.org'
     },
     {
-        name: `Keras`,
-        link: 'https://keras.io'
+        name: `Catboost`,
+        link: 'https://catboost.a'
     },
     {
         name: `XGBoost`,
@@ -241,6 +241,10 @@ const DataScienceTools = [
         link: 'https://jupyter.org'
     },
     {
+        name: `Anaconda`,
+        link: 'https://www.anaconda.com/'
+    },
+    {
         name: `Pandas`,
         link: 'https://pandas.pydata.org'
     },
@@ -251,14 +255,6 @@ const DataScienceTools = [
     {
         name: `Matplotlib`,
         link: 'https://matplotlib.org'
-    },
-    {
-        name: `Seaborn`,
-        link: 'https://seaborn.pydata.org'
-    },
-    {
-        name: `SciPy`,
-        link: 'https://www.scipy.org'
     },
     // Add more data science tools as needed
 ];
